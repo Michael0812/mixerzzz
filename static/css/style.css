@@ -12,6 +12,11 @@ body{
 nav {
     background-color: black;
 }
+.logo{
+    margin-top: 40px;
+    padding-top: 50px;
+    height: 20px;
+}
 
 /* Banner */
 .banner {
