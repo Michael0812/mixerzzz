@@ -22,3 +22,15 @@ p{
 .main-content{
     margin-top: 100px;
 }
+
+h3{
+    color: white;
+}
+.glass{
+    width: 100%;
+    margin: auto;
+    height: 80%;
+}
+ul{
+    color: white;
+}
