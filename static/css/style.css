@@ -5,6 +5,8 @@ html {
 }
 body{
     background-color: black;
+    color: white;
+    font-size: 1.2rem;
 }
 /* Navbar */
 nav {
@@ -16,21 +18,16 @@ nav {
     width: 100%;
     height: 60%;
 }
-p{
-    color: white;
-}
+
 .main-content{
     margin-top: 100px;
 }
 
-h3{
-    color: white;
-}
 .glass{
     width: 100%;
     margin: auto;
     height: 80%;
 }
-ul{
-    color: white;
+li{
+    margin: 16px 0;
 }
