@@ -3,6 +3,9 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+body{
+    background-color: black;
+}
 /* Navbar */
 nav {
     background-color: black;
@@ -11,5 +14,11 @@ nav {
 /* Banner */
 .banner {
     width: 100%;
-    height: 70%;
+    height: 60%;
+}
+p{
+    color: white;
+}
+.main-content{
+    margin-top: 100px;
 }
