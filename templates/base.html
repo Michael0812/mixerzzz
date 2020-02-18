@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for(filename='css/main.css')}}" type="text/css">
+
   <title>How to drink whisky</title>
 </head>
 
@@ -15,22 +17,20 @@
   <!-- Navigation -->
   <header>
         <nav>
-        <div class="container navbar">
+        <div class="container">
             <div class="nav-wrapper">
-                <a href="" class="brand-logo" ><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo"></a>
+                <a href=""><img src="{{ url_for('static', filename='img/logo.svg') }}"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="drinks.html">Drinks</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
+                <ul id="nav-mobile right" class="right hide-on-med-and-down">
+                    <li><a href="drinks.html">DRINKS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
                 </ul>
     <!-- Mobile navbar-->
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="drinks.html">Drinks</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="drinks.html">DRINKS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
                 </ul>
             </div>
             </div>
@@ -38,7 +38,7 @@
     </header>
 
     <!--Banner-->
-    <div class="container-responsive">
+    <div class="container-resposnive">
         <img src="https://images.pexels.com/photos/2796105/pexels-photo-2796105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img banner" alt="banner">
     </div>
 
@@ -46,30 +46,31 @@
 
     
 
-       <div class="container main-content pt-2 center">
+       <div class="container pb-4">
             <div class="row">
-                <div class="col">
-                    <p>This is a app about how to drink whisky. To be more precise, this is a app about how whisky has been enjoyed down the centuries, and it offers ideas on how to maximize pleasure when you next look at an off-license shell or back bar. That’s simple, you might think - open the bootle, take a glass and pour liquid into it..and remember to open your mouth when bending your elbow. Well, yes and no. 
-                    </p>
+                <div class="col mx-auto center">
+                <h3>Welcome to kurwa kurwa</h3>
+                     <p class="content center pl-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries, also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open your mouth when bending your elbow. Well, yes and no.                    </p>
                 </div>
             </div>
         </div>
 
     <!--Content (Mixing)-->
-    <div class="container center pt-2">
+
+
+    <div class="container">
         <div class="row">
-        <div class="col">
+            
+            <div class="col-lg-5 col-sm-12 col-mx-auto">
             <h3>Mixing</h3>
-            <img src="../static/img/glass.jpg" class="img-fluid glass">
-            <div class="col">
-                <p>Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon.
+                <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for that bottle of water, my friend, and pour it over their hand - saving some for your dram.
                 </p>
-               </div> 
+            </div> 
+            <div class="col-lg-5 col-sm-12">
+                <a href=""><img src="{{ url_for('static', filename='img/bottle.jpg') }}"></a>
             </div>
         </div>
     </div>
-
-
 
         <!--Scoring System-->
 
@@ -80,6 +81,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="../static/js/materialize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 
 </html>
