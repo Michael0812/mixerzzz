@@ -1,0 +1,25 @@
+
+{% block navbar %}
+
+<header>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo" alt="logo"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile right" class="right hide-on-med-and-down">
+            <li><a href="drinks.html">DRINKS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+          <!-- Mobile navbar-->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="drinks.html">DRINKS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+{% endblock %}
