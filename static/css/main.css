@@ -1,21 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+   @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: 'Rubik', sans-serif;
-
-}
-body{
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.2rem;
-    background-color: black;
-}
-p{
-    color: white;
-}
-.text{
-    font-size: 30px;
-    color: red;
-}
+    html {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Rubik', sans-serif;
+    }
+    
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: black;
+    }
+    nav{
+        background-color: black;
+    }
+    p, h3{
+        color: white;
+    }
+    .logo {
+      height: 60px;
+    }
+    .content{
+        font: Rubik;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+    }
