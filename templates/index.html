@@ -29,25 +29,27 @@
   <div class="container pb-4">
     <div class="row">
 
-      <div class="col-lg-5 col-sm-12 col-mx-auto">
+      <div class="col-lg-5 col-sm-12 mx-auto">
         <h3>Mixing</h3>
         <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for
           effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for
           that bottle of water, my friend, and pour it over their hand - saving some for your dram.
         </p>
       </div>
-      <div class="col-lg-5 col-sm-12 .d-none .d-sm-block">
+      <div class="col-lg-5 col-sm-12 d-sm-block">
         <img src="{{ url_for('static', filename='img/bottle.jpg') }}" alt="bottle" class="bottle"></a>
       </div>
     </div>
   </div>
 <!--flip card-->
+<div class="container">
 <div class="row">
-<div class="col">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 dupa">
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-        <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks">
+        <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
+            <p>WATER</p>
     </div>
     <div class="flip-box-back">
       
@@ -58,11 +60,12 @@
 </div>
 
 
-<div class="col">
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-         <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger" class="drinks">
+         <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger" class="drinks mb-2">
+            <p>GINGER</p>
     </div>
     <div class="flip-box-back">
       
@@ -73,11 +76,12 @@
 </div>
 
 
-<div class="col">
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-        <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks">
+        <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mb-2">
+        <p>COKE</p>
     </div>
     <div class="flip-box-back">
       
@@ -88,11 +92,12 @@
 </div>
 
 
-<div class="col">
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-         <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks">
+         <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mb-2">
+            <p>GREEN TEA</p>
     </div>
     <div class="flip-box-back">
       
@@ -103,32 +108,24 @@
 </div>
 
 </div>
+</div>
 
-<!--Scoring System-->
-<!--
-  <div class="container pt-4 center">
-    <div class="row">
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <a href=""><img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water"></a>
-        <p class="drinks pt-4">WATER</p>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <a href=""><img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger"></a>
-        <p class="drinks pt-5 mt-3">GINGER ALE</p>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-4">
-        <a href=""><img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke"></a>
-        <p class="drinks pt-4 mt-2">COKE</p>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <a href=""><img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea"></a>
-        <p class="drinks pt-5">GREEN TEA</p>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <a href=""><img src="{{ url_for('static', filename='img/coconut_water.svg') }}" alt="Coconut Water"></a>
-        <p class="drinks pt-4 mt-2">COCONUT WATER</p>
-      </div>
+
+<!--SCORING-->
+
+<div class="container">
+    <div class="row pt-5 mt-5">
+        <div class="col">
+
+  <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number ml-2 mb-3" alt="number 1">Avoid.</p>
+  <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-3" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>
+  <p class="scoring"><img src="{{ url_for('static', filename='img/3.svg') }}" class="number mb-3" alt="number 3">Good drink, with everything in balance. I’d be happy with one of these. I might not have two.</p>
+  <p class="scoring"><img src="{{ url_for('static', filename='img/4.svg') }}" class="number mb-3" alt="number 4">Great drink. This is where the whisky is beginning to shed some of its seven veils, the drink ism ore than the sum of its two parts.</p>
+  <p class="scoring"><img src="{{ url_for('static', filename='img/5.svg') }}" class="number mb-3" alt="number 5">The best. A musty-try. The whisky transormed into a munificent drink.</p>
+
+        </div>
     </div>
-  </div>
-//-->
+</div>
+
+
   {% endblock %}
