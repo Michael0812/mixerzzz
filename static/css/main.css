@@ -41,12 +41,19 @@
     }
 
     /* Media Queries */
-
+@media only screen and (min-width: 769px) {
+    .bottle{
+        width: 400px;
+        height: 400px;
+        margin-right: 140px;
+    }
+}
     @media only screen and (min-width: 1024px) {
     .content{
         margin-left: 10%;
         margin-right: 10%;
         }
+    
     }
     @media only screen and (max-width: 768px) {
         .bottle{
@@ -156,6 +163,7 @@
     /* FOOTER */
 .page-footer{
     background-color: #606060;
+    margin: auto;
 }
   .logo1{
         height: 90px;
@@ -168,7 +176,4 @@
         color:#FFFFFF;
         font-size: 1.2rem;
         margin-bottom: 3px;
-    }
-    .copyright{
-        margin-left: 10%;
     }
