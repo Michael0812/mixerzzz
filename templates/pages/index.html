@@ -1,132 +1,126 @@
 {% extends 'pages/base.html' %}
 
 {% block content  %}
- 
 
-  <!--Banner-->
-  <div class="container-responsive">
-    <img src="{{ url_for('static', filename='img/banner.jpg') }}" class="banner img-fluid " alt="banner">
-  </div>
+<!--Banner-->
 
-  <!--Main Content-->
+<div class="container-responsive">
+  <img src="{{ url_for('static', filename='img/banner.jpg') }}" class="banner img-fluid " alt="banner">
+</div>
 
+<!--Main Content-->
 
-
-  <div class="container pb-4">
-    <div class="row">
-      <div class="col sm-12 mx-auto center">
-        <h3>Welcome to <p class="name">MIXERZZZ</p></h3>
-        <p class="content center pt-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries,
-          also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open
-          your mouth when bending your elbow. Well, yes and no. </p>
-      </div>
+<div class="container pb-4">
+  <div class="row">
+    <div class="col sm-12 mx-auto center">
+      <h3>Welcome to <p class="name">MIXERZZZ</p>
+      </h3>
+      <p class="content center pt-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries,
+        also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open
+        your mouth when bending your elbow. Well, yes and no. </p>
     </div>
   </div>
+</div>
 
-  <!--Content (Mixing)-->
+<!--Content (Mixing)-->
 
-
-  <div class="container pb-4">
-    <div class="row">
-
-      <div class="col-lg-5 col-sm-12 mx-auto">
-        <h3>Mixing</h3>
-        <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for
-          effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for
-          that bottle of water, my friend, and pour it over their hand - saving some for your dram.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-5   ">
-        <img src="{{ url_for('static', filename='img/bottle.jpg') }}" alt="bottle" class="bottle"></a>
-      </div>
+<div class="container pb-4">
+  <div class="row">
+    <div class="col-lg-5 col-sm-12 mx-auto">
+      <h3>Mixing</h3>
+      <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for
+        effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for
+        that bottle of water, my friend, and pour it over their hand - saving some for your dram.
+      </p>
+    </div>
+    <div class="col-sm-12 col-lg-5   ">
+      <img src="{{ url_for('static', filename='img/bottle.jpg') }}" alt="bottle" class="bottle"></a>
     </div>
   </div>
+</div>
+
 <!--flip card-->
+
 <div class="container">
-<div class="row pt-4">
-<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 dupa">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-        <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
+  <div class="row pt-4">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 dupa">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
             <p>WATER</p>
+          </div>
+          <div class="flip-box-back">
+            <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when
+              drinking</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flip-box-back">
-      
-      <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
-    </div>
-  </div>
-</div>
-</div>
 
 
-<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-         <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger" class="drinks mb-2">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger" class="drinks mb-2">
             <p>GINGER</p>
+          </div>
+          <div class="flip-box-back">
+            <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when
+              drinking</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flip-box-back">
-      
-      <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
-    </div>
-  </div>
-</div>
-</div>
 
 
-<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-        <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mb-2">
-        <p>COKE</p>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mb-2">
+            <p>COKE</p>
+          </div>
+          <div class="flip-box-back">
+            <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when
+              drinking</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flip-box-back">
-      
-      <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
-    </div>
-  </div>
-</div>
-</div>
 
 
-<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-         <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mb-2">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 dupa">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mb-2">
             <p>GREEN TEA</p>
-    </div>
-    <div class="flip-box-back">
-      
-      <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
+          </div>
+          <div class="flip-box-back">
+            <p> It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when
+              drinking</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
-</div>
-</div>
-
 
 <!--SCORING-->
 
 <div class="container">
-    <p class="scoring-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae omnis neque ab nihil odio reprehenderit, rem officia perferendis repellat itaque amet harum a aliquam assumenda cum minima aspernatur rerum.</p>
-    <div class="row pt-5 mt-5">
-        <div class="col">
-
-  <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number ml-2 mb-3" alt="number 1">Avoid.</p>
-  <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-3" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>
-  <p class="scoring"><img src="{{ url_for('static', filename='img/3.svg') }}" class="number mb-3" alt="number 3">Good drink, with everything in balance. I’d be happy with one of these. I might not have two.</p>
-  <p class="scoring"><img src="{{ url_for('static', filename='img/4.svg') }}" class="number mb-3" alt="number 4">Great drink. This is where the whisky is beginning to shed some of its seven veils, the drink ism ore than the sum of its two parts.</p>
-  <p class="scoring"><img src="{{ url_for('static', filename='img/5.svg') }}" class="number mb-3" alt="number 5">The best. A musty-try. The whisky transormed into a munificent drink.</p>
-
-        </div>
+  <p class="scoring-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae omnis neque ab nihil odio reprehenderit, rem officia perferendis repellat itaque amet harum a aliquam assumenda cum minima aspernatur rerum.</p>
+  <div class="row pt-5 mt-5">
+    <div class="col">
+      <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number ml-2 mb-3" alt="number 1">Avoid.</p>
+      <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-3" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>
+      <p class="scoring"><img src="{{ url_for('static', filename='img/3.svg') }}" class="number mb-3" alt="number 3">Good drink, with everything in balance. I’d be happy with one of these. I might not have two.</p>
+      <p class="scoring"><img src="{{ url_for('static', filename='img/4.svg') }}" class="number mb-3" alt="number 4">Great drink. This is where the whisky is beginning to shed some of its seven veils, the drink ism ore than the sum of its two parts.</p>
+      <p class="scoring"><img src="{{ url_for('static', filename='img/5.svg') }}" class="number mb-3" alt="number 5">The best. A musty-try. The whisky transormed into a munificent drink.</p>
     </div>
+  </div>
 </div>
 
-
-  {% endblock %}
+{% endblock %}

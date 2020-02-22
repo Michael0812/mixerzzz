@@ -1,45 +1,46 @@
 {% block footer %}
 
-        <footer class="page-footer pt-4 mt-4 responsive">
-            <div class="container text-center text-md-left">
-              <div class="row">
-                <div class="col-md-5 col-lg-5 mt-md-1 mt-3 pr-lg-2 mr-lg-2 mr-md-4 pb-5">
-                  <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo1" alt="logo"></a>
-                  <p class="name mt-3">MIXERZZZ</p>
-                </div>
-                <div class="col-md-3 mb-3 pb-3">
-                  <ul class="list-unstyled">
-                    <li class="address pt-3">
-                      <a href="{{url_for('index')}}" class="address">Drinks</a>
-                    </li>
-                    <li class="address">
-                      <a href="{{url_for('index')}}" class="address">Login</a>
-                    </li>
-                    <li class="address">
-                     <a href="{{url_for('index')}}" class="address">Register</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h5>Follow Us:</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                    <!--Social media -->
-                      <a href="https://twitter.com/WhiskyExchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/twitter.svg') }}" class="social" alt="twitter-icon"></a>
-                      <a href="https://www.facebook.com/thewhiskyexchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/facebook.svg') }}" class="social" alt="facebook-icon"></a>
-                      <a href="https://www.instagram.com/whiskyexchange/" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/instagram.svg') }}" class="social" alt="instagram-icon"></a>
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
+<footer class="page-footer pt-4 mt-4 responsive">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-5 col-lg-5 mt-md-1 mt-3 pr-lg-2 mr-lg-2 mr-md-4 pb-5">
+        <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo1" alt="logo"></a>
+        <p class="name mt-3">MIXERZZZ</p>
+      </div>
+      <div class="col-md-3 mb-3 pb-3">
+        <ul class="list-unstyled">
+          <li class="address pt-3">
+            <a href="{{url_for('index')}}" class="address">Drinks</a>
+          </li>
+          <li class="address">
+            <a href="{{url_for('index')}}" class="address">Login</a>
+          </li>
+          <li class="address">
+            <a href="{{url_for('index')}}" class="address">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Follow Us:</h5>
+        <ul class="list-unstyled">
+          <li>
 
-              
-            </div>
- <!-- Copyright -->
-  <div class="footer-copyright">
-  <p>© 2020 HOW TO MIX WHISKY - ALL RIGHTS RESERVED</p>
+    <!--Social media -->
+
+            <a href="https://twitter.com/WhiskyExchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/twitter.svg') }}" class="social" alt="twitter-icon"></a>
+            <a href="https://www.facebook.com/thewhiskyexchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/facebook.svg') }}" class="social" alt="facebook-icon"></a>
+            <a href="https://www.instagram.com/whiskyexchange/" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/instagram.svg') }}" class="social" alt="instagram-icon"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  </footer>
+    <!-- Copyright -->
+
+  <div class="footer-copyright">
+    <p>© 2020 HOW TO MIX WHISKY - ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+
 {% endblock %}
