@@ -145,7 +145,7 @@
     }
 
     /* FOOTER */
-    .logo1{
-        height: 100vh;
-        width: 200px;
-    }
+.page-footer{
+    background-color: black;
+    border: 1px solid #606060;
+}
