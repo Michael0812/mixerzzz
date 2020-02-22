@@ -25,6 +25,7 @@
     .logo {
       height: 45px;
     }
+  
     .text, .content{
         letter-spacing: 0.4px;
         opacity: 1px;
@@ -149,3 +150,6 @@
     background-color: black;
     border: 1px solid #606060;
 }
+  .logo1{
+        height: 180px;
+    }
