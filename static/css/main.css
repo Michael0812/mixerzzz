@@ -1,89 +1,60 @@
-   @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-   @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
-    html {
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-    
-    body {
-      font-family: 'Rubik', sans-serif;
-      background-color: black;  
-      width: 100%;
-      height: 100%;
-    }
-    .row{
-        margin: auto;
-    }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
 
-    nav{
-        background-color:#000000;
-    }
-    p, h3{
-        color: #FFFFFF;
-    }
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  nav {
+    background-color: #000000;
+  }
+
+  p,
+  h3 {
+    color: #FFFFFF;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .text,
+  .content {
+    letter-spacing: 0.4px;
+    opacity: 1px;
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-family: 'Gloria Hallelujah', sans-serif;
+    letter-spacing: 4.8px;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
     .logo {
-      height: 45px;
+      height: 30px;
     }
-  
-    .text, .content{
-        letter-spacing: 0.4px;
-        opacity: 1px;
-        font-size: 1.2rem;  
-    }
-    .name{
-        font-family: 'Gloria Hallelujah', sans-serif ;
-        letter-spacing: 4.8px;
-        font-size: 2.2rem;
-        color: #FFFFFF;
-        opacity: 1;
-    }
+  }
 
-    /* Media Queries */
-@media only screen and (min-width: 769px) {
-    .bottle{
-        width: 400px;
-        height: 400px;
-        margin-right: 140px;
-    }
-}
-    @media only screen and (min-width: 1024px) {
-    .content{
-        margin-left: 10%;
-        margin-right: 10%;
-        }
-    
-    }
-    @media only screen and (max-width: 768px) {
-        .bottle{
-            height: 400px;
-            width: 450px;
-        }
-    }
-    @media only screen and (max-width: 568px) {
-        .bottle{
-            height: 330px;
-            width: 320px;
-            padding-right: 20px;
-            
-        }
-        .logo{
-            height: 30px;
-        }
-    }
-    /* Flip images */
-    .drinks{
-        margin-top: 50px;
-
-    }
-    @media only screen and (min-width: 768px){
-
-.flip-box{
-    padding-right: 10%;
-    padding-left: 10%;
-}
-    }
+  /* Flip images */
+  .drinks {
+    margin-top: 50px;
+  }
 
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   .flip-box {
@@ -93,13 +64,12 @@
     background-color: transparent;
     width: 260px;
     height: 200px;
-    perspective: 1000px; /* 3D effect */
+    perspective: 1000px;
+    /* 3D effect */
   }
 
   /* This container is needed to position the front and back side */
   .flip-box-inner {
-
-    
     width: 100%;
     height: 100%;
     text-align: center;
@@ -113,67 +83,111 @@
   }
 
   /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    
+  .flip-box-front,
+  .flip-box-back {
+
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
   }
 
   /* Style the front side (fallback if image is missing) */
   .flip-box-front {
-  
     background-color: #bbb;
     color: black;
   }
 
   /* Style the back side */
   .flip-box-back {
-      
     background-color: red;
     color: white;
     transform: rotateY(180deg);
   }
-.dupa{
-     flex: 25%;
-  padding: 5px;
-}
-.dupa-row{
+
+  .dupa {
+    flex: 25%;
+    padding: 5px;
+  }
+
+  .dupa-row {
     display: flex;
-}
+  }
 
-.scoring{
+  .scoring {
     font-size: 20px;
-}
+  }
 
-.number{
+  .number {
     height: 35px;
     margin-right: 1.7rem;
-    }
-.scoring-text{
-        color: white;
-        font-size: 2rem;
-        margin-top: 50px;
-        padding-top: 70px;
-        text-align: center;
-    }
+  }
 
-    /* FOOTER */
-.page-footer{
+  .scoring-text {
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .page-footer {
     background-color: #606060;
     margin: auto;
-}
-  .logo1{
-        height: 90px;
+  }
+
+  .logo1 {
+    height: 90px;
+  }
+
+  .social {
+    height: 2.7rem;
+    margin-right: 15px;
+  }
+
+  .address {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+
+  /* Media Queries */
+  @media only screen and (min-width: 769px) {
+    .bottle {
+      width: 400px;
+      height: 400px;
+      margin-right: 140px;
     }
-    .social{
-        height: 2.7rem;
-        margin-right: 15px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .content {
+      margin-left: 10%;
+      margin-right: 10%;
     }
-    .address{
-        color:#FFFFFF;
-        font-size: 1.2rem;
-        margin-bottom: 3px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .bottle {
+      height: 400px;
+      width: 450px;
     }
+  }
+
+  @media only screen and (max-width: 568px) {
+    .bottle {
+      height: 330px;
+      width: 320px;
+      padding-right: 20px;
+
+    }
+    @media only screen and (min-width: 768px) {
+
+    .flip-box {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+  }
