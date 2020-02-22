@@ -1,4 +1,4 @@
-
+   @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
    @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
 
     html {
@@ -8,7 +8,7 @@
     }
     
     body {
-      font-family: "Rubik", sans-serif;
+      font-family: 'Rubik', sans-serif;
       background-color: black;  
       width: 100%;
       height: 100%;
@@ -31,6 +31,13 @@
         letter-spacing: 0.4px;
         opacity: 1px;
         font-size: 1.2rem;  
+    }
+    .name{
+        font-family: 'Gloria Hallelujah', sans-serif ;
+        letter-spacing: 4.8px;
+        font-size: 2.2rem;
+        color: #FFFFFF;
+        opacity: 1;
     }
 
     /* Media Queries */
