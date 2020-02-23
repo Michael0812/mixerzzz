@@ -17,6 +17,11 @@ def index():
 def drinks():
     return render_template('pages/drinks.html')
 
+# Register page
+@app.route('/register.html')
+def register():
+    return render_template('pages/register.html')
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
