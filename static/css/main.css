@@ -105,8 +105,10 @@
 .form-group{
     margin-top: 70px;
 }
-.register-info{
-    font-size: 30px;
+
+.username,
+.password{
+    font-size: 1.6rem;
 }
   /* Media Queries */
   @media only screen and (min-width: 769px) {
