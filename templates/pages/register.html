@@ -1,56 +1,44 @@
 {% extends 'pages/base.html' %} {% block content %}
 
+<div class="row">
+  <div class="col-md-12">
     <div class="row">
-
-        <div class="col-md-12">
-            <div class="row">
-
-                <div class="col-md-3">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 pt-5 mt-5 pb-5 mb-5 center">
+        <div class="form-group">
+          <!--Flash Message-->
+          <div class="container" style="min-height:100% width:80%">
+          </div>
+          <!--Sign up-->
+          <form action="" method="POST" class="col-md-12">
+            <div class="form-group">
+              <!--Username-->
+              <div class="form-group">
+                <label for="inputUsername">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Please, type your username" required="" minlength="3">
+              </div>
+              <!--Password-->
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" name="pass" placeholder="Please, type your unique password" required="" minlength="4">
+              </div>
+              <!--Submit-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light blue" type="submit" id="sendSignupButton">Submit</button>
                 </div>
-
-                <div class="col-md-6 center">
-                    <div class="form-group">
-
-                        <!--Flash Message-->
-                        <div class="container" style="min-height:100% width:80%">
-                        </div>
-
-                        <!--Sign up-->
-                        <form action="" method="POST" class="col-md-12">
-                            <div class="form-group">
-                                <!--Username-->
-                                <div class="form-group">
-                                    <label for="inputUsername">Username</label>
-                                    <input type="text" class="form-control" name="username" placeholder="Jdoe" required="" minlength="3">
-                                </div>
-                                <!--Password-->
-                                <div class="form-group">
-                                    <label for="inputPassword">Password</label>
-                                    <input type="password" class="form-control" name="pass" placeholder="******" required="" minlength="4">
-                                </div>
-                                <!--Submit-->
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <button class="btn waves-effect waves-light blue" type="submit" id="sendSignupButton">Submit</button>
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-
-                </div>
-
+              </div>
             </div>
+          </form>
         </div>
-
+      </div>
+      <div class="col-md-3">
+      </div>
     </div>
+  </div>
+
+</div>
 </div>
 
 
