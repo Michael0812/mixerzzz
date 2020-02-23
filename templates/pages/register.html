@@ -1,24 +1,57 @@
 {% extends 'pages/base.html' %} {% block content %}
 
-<form action="#" method="post">
-  <h2>Sign Up</h2>
-		<p>
-			<label for="Email" class="floatLabel">Email</label>
-			<input id="Email" name="Email" type="text">
-		</p>
-		<p>
-			<label for="password" class="floatLabel">Password</label>
-			<input id="password" name="password" type="password">
-			<span>Enter a password longer than 8 characters</span>
-		</p>
-		<p>
-			<label for="confirm_password" class="floatLabel">Confirm Password</label>
-			<input id="confirm_password" name="confirm_password" type="password">
-			<span>Your passwords do not match</span>
-		</p>
-		<p>
-			<input type="submit" value="Create My Account" id="submit">
-		</p>
-	</form>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6 center">
+                    <div class="form-group">
+
+                        <!--Flash Message-->
+                        <div class="container" style="min-height:100% width:80%">
+                        </div>
+
+                        <!--Sign up-->
+                        <form action="" method="POST" class="col-md-12">
+                            <div class="form-group">
+                                <!--Username-->
+                                <div class="form-group">
+                                    <label for="inputUsername">Username</label>
+                                    <input type="text" class="form-control" name="username" placeholder="Jdoe" required="" minlength="3">
+                                </div>
+                                <!--Password-->
+                                <div class="form-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" name="pass" placeholder="******" required="" minlength="4">
+                                </div>
+                                <!--Submit-->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <button class="btn waves-effect waves-light blue" type="submit" id="sendSignupButton">Submit</button>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
 
 {% endblock %}

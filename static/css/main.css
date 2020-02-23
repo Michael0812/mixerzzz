@@ -103,101 +103,109 @@
 
   /*Sign Up */
 
-  @import "compass/css3";
+  /*sass variables used*/
+$full:100%;
+$auto:0 auto;
+$align:center;
 
-$button: rgba(148,186,101,0.7);
-
-body {
-  background: #384047;
-  font-family: sans-serif;
-  font-size: 10px
-}
-form {
-  background: #fff;
-  padding: 4em 4em 2em;
-  max-width: 400px;
-  margin: 50px auto 0;
-  box-shadow: 0 0 1em #222;
-  border-radius: 2px;
-  h2 {
-    margin:0 0 50px 0;
-    padding:10px;
-    text-align:center;
-    font-size:30px;
-    color:darken(#e5e5e5, 50%);
-    border-bottom:solid 1px #e5e5e5;
-  }
-  p {
-    margin: 0 0 3em 0;
-    position: relative;
-  }
-  input {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    outline: none;
-    margin:0;
-  }
-  input[type="text"],
-  input[type="password"] {
-    background: #fff;
-    border: 1px solid #dbdbdb;
-    font-size: 1.6em;
-    padding: .8em .5em;
-    border-radius: 2px;
-  }
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    background: #fff
-  }
-  span {
-    display:block;
-    background: #F9A5A5;
-    padding: 2px 5px;
-    color: #666;
-  }
-  input[type="submit"] {
-    background: $button;
-    box-shadow: 0 3px 0 0 darken($button, 10%);
-    border-radius: 2px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 2em;
-    line-height: 1.6em;
-    margin: 2em 0 0;
-    outline: none;
-    padding: .8em 0;
-    text-shadow: 0 1px #68B25B;
-  }
-  input[type="submit"]:hover {
-    background: rgba(148,175,101,1);
-    text-shadow:0 1px 3px darken($button, 30%);
-  }
-  input[type="submit"]:hover {
-    
-  }
-  label{
-    position: absolute;
-    left: 8px;
-    top: 12px;
-    color: #999;
-    font-size: 16px;
-    display: inline-block;
-    padding: 4px 10px;
-    font-weight: 400;
-    background-color: rgba(255,255,255,0);
-    @include transition(color .3s, top .3s, background-color .8s);
-    &.floatLabel{
-      top: -11px;
-      background-color: rgba(255,255,255,0.8);
-      font-size: 14px;
-    }
-	}
-  
+@mixin disable{
+  outline:none;
+  border:none;
 }
 
+@mixin easeme{
+  -webkit-transition:1s ease;
+  -moz-transition:1s ease;
+  -o-transition:1s ease;
+  -ms-transition:1s ease;
+  transition:1s ease;
+}
+
+/*site container*/
+.wrapper{
+  width:420px;
+  margin:$auto;
+}
+
+h1{
+  text-align:$align;
+  padding:30px 0px 0px 0px;
+  font:25px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  margin:0px;
+}
+
+p{
+  font:13px Open Sans;
+  color:#6E6E6E;
+  text-shadow:#000 0px 1px 5px;
+  margin-bottom:30px;
+}
+
+.form{
+  width:$full;
+}
+
+input[type="text"],input[type="email"]{
+  width:98%;
+  padding:15px 0px 15px 8px;
+  border-radius:5px;
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+	background:rgba(0,0,0,0.2);
+  @include disable;
+  border:1px solid rgba(0,0,0,1);
+  margin-bottom:10px;
+  color:#6E6E6E;
+  text-shadow:#000 0px 1px 5px;
+}
+
+input[type="submit"]{
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  @include disable;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+  background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+  background-image: linear-gradient(#28D2DE 0%, #1A878F 100%);
+  font:14px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  border:1px solid #000;
+  opacity:0.7;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+  border-top:1px solid rgba(255,255,255,0.8)!important;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.2)));
+}
+
+input:focus{
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.7), 0 1px 1px -1px rgba(255,255,255,0.3);
+  background:rgba(0,0,0,0.3);
+  @include easeme;
+}
+
+input[type="submit"]:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
+.name-help,.email-help{
+  display:none;
+  padding:0px;
+  margin:0px 0px 15px 0px;
+}
+
+.optimize{
+  position:fixed;
+  right:3%;
+  top:0px;
+}
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
