@@ -23,6 +23,12 @@ def register():
     return render_template('pages/register.html')
 
 
+# Login page
+@app.route('/login.html')
+def login():
+    return render_template('pages/login.html')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT', '8080')),
