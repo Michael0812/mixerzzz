@@ -111,6 +111,11 @@
 .password{
     font-size: 1.6rem;
 }
+
+/* Drinks */
+.scottish{
+    height: 38rem;
+}
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
