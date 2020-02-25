@@ -116,6 +116,10 @@
 .scottish{
     height: 38rem;
 }
+
+.card-text{
+    color: black;
+}
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
