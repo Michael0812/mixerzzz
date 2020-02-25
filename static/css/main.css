@@ -113,12 +113,19 @@
 }
 
 /* Drinks */
+
 .scottish{
     height: 38rem;
 }
 
 .card-text{
     color: black;
+}
+.number{
+    margin-bottom: 10px;
+}
+.card-scoring{
+    width: 100%;
 }
   /* Media Queries */
   @media only screen and (min-width: 769px) {
