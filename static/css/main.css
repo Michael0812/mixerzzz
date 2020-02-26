@@ -127,6 +127,10 @@
 .card-scoring{
     width: 100%;
 }
+
+.title-drinks{
+    color: white;
+}
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
