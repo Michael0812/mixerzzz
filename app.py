@@ -1,11 +1,16 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
-from bson.objectid import ObjectId 
+from flask_pymongo import PyMongo, pymongo
+import env as config
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/task_manager?retryWrites=true&w=majority"
+# Configuration of database
+app.config["MONGO_DBNAME"] = 'whiskyDB'
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+
+
+mongo = PyMongo(app)
 
 
 # Home page
