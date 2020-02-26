@@ -1,14 +1,16 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
-
+from bson.objectid import ObjectId 
 
 app = Flask(__name__)
-app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority"
+
+app.config["MONGO_DBNAME"] = 'task_manager'
+app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/task_manager?retryWrites=true&w=majority"
 
 
 # Home page
 @app.route('/')
+@app.route('/index.html')
 def index():
     return render_template('pages/index.html')
 
