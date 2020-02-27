@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 # Configuration of database
 app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_URI"]= "mongodb+srv://Michael0812:a7d2hp11@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority"
+
 
 
 mongo = PyMongo(app)
