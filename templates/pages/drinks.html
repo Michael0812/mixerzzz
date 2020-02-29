@@ -4,16 +4,25 @@
 
 <!--SCOTTISH WHISKY-->
 
+
+
+    
+    
+    
+
 <h1 class="title-drinks center pt-5 mt-5">Scottish</h1>
 
 
 <div class="card-group pl-3 pr-3">
+{% for whisky in whisky %}
+<div class="container">
+<div class="row">
+<div class="col-12">
   <div class="card">
     <img class="card-img-top scottish" src="{{ url_for('static', filename='img/cutty_sark.jpg') }}" alt="cutty_sark">
     <div class="card-body">
-      <h5 class="card-title">Cutty Sark</h5>
-      <p class="card-text">The blend that started the Jazz Age Charge of the Light Brigade hasn’t lost any of its bright-young-thing charms. Cutty is about a porcelain-light coolness: blanched almond, lemon cheesecake, vanilla, balanced by almost
-        hidden silky depths. No surprise that it works brilliantly with soda.</p>
+      <h5 class="card-title">{{ whisky.whisky_name }}</h5>
+      <p class="card-text">{{ whisky.whisky_description }}</p>
       <table>
         <tr>
           <td>Water</td>
@@ -34,140 +43,9 @@
       </table>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/ballantines.jpg') }}" alt="ballantines">
-    <div class="card-body">
-      <h5 class="card-title">Ballantines</h5>
-      <p class="card-text">Your nose assailed by the aromas of patisserie, pastries, cakes and flour, but you sleeve is being tugged by a child who wants you to play in the park on the rise day of spring. That’s Finest,
-        a mix of the vibrant, grassy, and eatery with sufficient sweet softness to give weight.</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>Ginger</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>4</td>
-        </tr>
-      </table>
-    </div>
   </div>
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/scottish_leader.jpg') }}" alt="scottish leader">
-    <div class="card-body">
-      <h5 class="card-title">Scottish Leader</h5>
-      <p class="card-text mb-3 pb-3">Soda is too salty, and while there’s dried fruit with ginger it’s no better than a good mix. Green tea picks out the sweet core and allow the layers to develop, while coconut water shows roaster coconut at its most
-        substantial.</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Ginger</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>4</td>
-        </tr>
-      </table>
-    </div>
   </div>
-</div>
-
-<!--IRISH WHISKY-->
-
-<h1 class="title-drinks center pt-5 mt-5">Irish</h1>
-
-<div class="card-group pl-3 pr-3">
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/bushmills.jpg') }}" alt="1. Bushmills Black Bush">
-    <div class="card-body">
-      <h5 class="card-title">Bushmills Black Bush</h5>
-      <p class="card-text pb-md-4">One malt, one grain. You’d thing that this would be a recipe for simplicity. There’s a cereal undertow to its rich, dark fruitiness, which brings to ming damson jam, peaches, and a lick of liquorice strap.</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Ginger</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>2</td>
-        </tr>
-      </table>
-    </div>
   </div>
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/jameson.jpg') }}" alt="Jameson">
-    <div class="card-body">
-      <h5 class="card-title">Jameson</h5>
-      <p class="card-text mb-md-3 pb-mg-4 mb-lg-3 pb-lg-1">Here you see glimmerings of the oily/apple/spice triumvirate of single pot still, but juicy fresh fruits dominate the nose, while the palate has a popping-candy-like liveliness alongside blackcurrant fruit pastilles.</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Ginger</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>2</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/tullamore.jpg') }}" alt="Tullamore Dew">
-    <div class="card-body">
-      <h5 class="card-title">Tullamore Dew</h5>
-      <p class="card-text">It mixes well with green tea to show its eatery side, while ginger ale is a little shy but pleasant, and although cola fizzles out because of the lack of weight, soda and coconut water work - the former very lively and buttery but the latter transorfmative.</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Ginger</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>3</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</div>
+  {% endfor %}
 
 {% endblock %}

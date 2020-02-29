@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Configuration of database
 app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority";
+app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority"
 
 
 mongo = PyMongo(app)
@@ -24,7 +24,7 @@ def index():
 # Drinks page
 @app.route('/drinks.html')
 def drinks():
-    return render_template('pages/drinks.html', tasks=mongo.db.tasks.find())
+    return render_template('pages/drinks.html', whisky=mongo.db.whisky.find())
 
 # Register page
 @app.route('/register.html')
