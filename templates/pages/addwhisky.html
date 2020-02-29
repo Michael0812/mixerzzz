@@ -6,6 +6,16 @@
 
 <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
   <form action="" method="POST" class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+        <label>Select Whisky</label>
+      </div>
+    </div>
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix">add_a_photo</i>
@@ -29,28 +39,28 @@
     </div>
     <div class="row mb-2">
       <div class="input-field col s12">
-        <i class="material-icons prefix">local_drink</i>
+        <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/water.svg') }}" alt="Water"></i>
         <input id="number_water" name="number_water" type="text">
         <label for="icon_prefix">Scoring: Water</label>
       </div>
     </div>
     <div class="row mb-2">
       <div class="input-field col s12">
-        <i class="material-icons prefix">local_drink</i>
+        <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale"></i>
         <input id="number_ginger" name="number_giner" type="text">
-        <label for="icon_prefix">Scoring: Ginger</label>
+        <label for="icon_prefix">Scoring: Ginger ale</label>
       </div>
     </div>
     <div class="row mb-2">
       <div class="input-field col s12">
-        <i class="material-icons prefix">local_drink</i>
+        <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke"></i>
         <input id="number_coke" name="number_coke" type="text">
         <label for="icon_prefix">Scoring: Coke</label>
       </div>
     </div>
     <div class="row mb-2">
       <div class="input-field col s12">
-        <i class="material-icons prefix">local_drink</i>
+        <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea"></i>
         <input id="number_green_tea" name="number_green_tea" type="text">
         <label for="icon_prefix">Scoring: Green Tea</label>
       </div>

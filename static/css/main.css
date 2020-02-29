@@ -115,6 +115,10 @@
     color: white;
 }
 
+.icon-form{
+    height: 30px;
+    opacity: 0.22;
+}
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
