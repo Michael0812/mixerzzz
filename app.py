@@ -41,7 +41,8 @@ def login():
 @app.route('/')
 @app.route('/add_whisky')
 def add_whisky():
-    return render_template('pages/addwhisky.html')
+    return render_template('pages/addwhisky.html',
+    categories=mongo.db.categories.find())
 
 
 if __name__ == '__main__':
