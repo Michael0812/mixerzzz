@@ -7,8 +7,8 @@ from flask_pymongo import PyMongo, pymongo
 app = Flask(__name__)
 
 # Configuration of database
-app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/task_manager?retryWrites=true&w=majority";
+app.config["MONGO_DBNAME"] = 'whiskyDB'
+app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority";
 
 
 mongo = PyMongo(app)
