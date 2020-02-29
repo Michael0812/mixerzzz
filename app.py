@@ -7,26 +7,15 @@ from flask_pymongo import PyMongo, pymongo
 app = Flask(__name__)
 
 # Configuration of database
-<<<<<<< HEAD
 app.config["MONGO_DBNAME"] = 'task_manager'
 app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/task_manager?retryWrites=true&w=majority";
-=======
-app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"]= "mongodb+srv://Michael0812:a7d2hp11@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority"
-
->>>>>>> afd8e262e418fa0fb35e4860ff18970bc60b512d
 
 
 mongo = PyMongo(app)
 
-@app.route('/')
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template("pages/tasks.html", tasks=mongo.db.tasks.find())
-
 
 # Home page
-
+@app.route('/')
 @app.route('/index.html')
 def index():
     return render_template('pages/index.html')
