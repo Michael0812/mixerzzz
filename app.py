@@ -37,6 +37,11 @@ def register():
 def login():
     return render_template('pages/login.html')
 
+# Add page
+@app.route('add_whisky')
+def add_whisky():
+    return render_template('pages/addwhisky.html')
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
