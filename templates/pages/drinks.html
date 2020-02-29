@@ -19,26 +19,26 @@
 <div class="row">
 <div class="col-12">
   <div class="card">
-    <img class="card-img-top scottish" src="{{ url_for('static', filename='img/cutty_sark.jpg') }}" alt="cutty_sark">
+    <img class="card-img-top scottish img-responsive" src="{{ whisky.whisky_img }}" alt="cutty_sark">
     <div class="card-body">
       <h5 class="card-title">{{ whisky.whisky_name }}</h5>
       <p class="card-text">{{ whisky.whisky_description }}</p>
       <table>
         <tr>
-          <td>Water</td>
-          <td>5</td>
+          <td>{{ whisky.scoring_water }}</td>
+          <td>{{ whisky.number_water }}</td>
         </tr>
         <tr>
-          <td>Ginger</td>
-          <td>3</td>
+          <td>{{ whisky.scoring_ginger }}</td>
+          <td>{{ whisky.number_ginger }}</td>
         </tr>
         <tr>
-          <td>Coke</td>
-          <td>2</td>
+          <td>{{ whisky.scoring_coke}}</td>
+          <td>{{ whisky.number_coke }}</td>
         </tr>
         <tr>
-          <td>Green Tea</td>
-          <td>4</td>
+          <td>{{ whisky.scoring_greentea}}</td>
+          <td>{{ whisky.number_green_tea }}</td>
         </tr>
       </table>
     </div>
