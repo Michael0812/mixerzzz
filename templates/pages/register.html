@@ -1,50 +1,47 @@
-{% extends 'pages/base.html' %} {% block content %}
-
-
-    <div class="row">
-        <div class="col-md-12 pt-5">
-            <h1 class="center">Sign Up</h1>
-
+{% extends 'pages/base.html' %}
+{% block content %}
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12 pt-5">
+    <h1 class="center">Sign Up</h1>
+
     <div class="row">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6 pb-5 mb-5 center">
-        <div class="form-group">
-          <!--Flash Message-->
-          <div class="container" style="min-height:100% width:80%">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
           </div>
-          <!--Sign up-->
-          <form action="" method="POST" class="col-md-12">
+          <div class="col-md-6 pb-5 mb-5 center">
             <div class="form-group">
-              <!--Username-->
-              <div class="form-group">
-                <label for="inputUsername" class="username">Username</label>
-                <input type="text" class="form-control" name="username" placeholder="Please, type your username" required="" minlength="3">
+            <!--Flash Message-->
+              <div class="container" style="min-height:100% width:80%">
               </div>
-              <!--Password-->
-              <div class="form-group">
-                <label for="inputPassword" class="password">Password</label>
-                <input type="password" class="form-control" name="pass" placeholder="Please, type your unique password" required="" minlength="4">
-              </div>
-              <!--Submit-->
-              <div class="row">
-                <div class="input-field col s12">
-                  <button class="btn waves-effect waves-light blue" type="submit" id="sendSignupButton">Submit</button>
+            <!--Sign up-->
+              <form action="" method="POST" class="col-md-12">
+                <div class="form-group">
+            <!--Username-->
+                  <div class="form-group">
+                    <label for="inputUsername" class="username">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Please, type your username" required="" minlength="3">
+                  </div>
+            <!--Password-->
+                  <div class="form-group">
+                    <label for="inputPassword" class="password">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Please, type your unique password" required="" minlength="4">
+                  </div>
+            <!--Submit-->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <button class="btn waves-effect waves-light blue" type="submit" id="sendSignupButton">Submit</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
-          </form>
+          </div>
+          <div class="col-md-3">
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-      </div>
     </div>
-  </div>
-</div>
 
-
-
-{% endblock %}
+    {% endblock %}
