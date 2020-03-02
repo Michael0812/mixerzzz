@@ -59,6 +59,23 @@ def edit_whisky(whisky_id):
     return render_template('pages/editwhisky.html', whisky=the_whisky,
                            categories=all_categories)
 
+# Update whisky
+@app.route('/update_whisky/<whisky_id>', methods=["POST"])
+def update_whisky(whisky_id):
+    whisky = mongo.db.whisky
+    whisky.update( {'_id': ObjectId(whisky_id)},
+    {
+        'category_name': request.form.get('category_name'),
+        'whisky_img': request.form.get('whisky_img'),
+        'whisky_name': request.form.get('whisky_name'),
+        'whisky_description': request.form.get('whisky_description'),
+        'number_water': request.form.get('number_water'),
+        'number_ginger': request.form.get('number_ginger'),
+        'number_coke': request.form.get('number_coke'),
+        'number_green_tea': request.form.get('number_green_tea')
+    })
+    return redirect(url_for('drinks'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
