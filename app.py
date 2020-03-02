@@ -45,6 +45,12 @@ def add_whisky():
     categories=mongo.db.categories.find())
 
 
+@app.route('/insert_whisky', methods=['POST'])
+def insert_whisky():
+    whisky = mongo.db.whisky
+    whisky.insert_one(request.form.to_dict())
+    return redirect(url_for('drinks'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT', '8080')),
