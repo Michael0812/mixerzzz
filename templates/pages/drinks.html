@@ -42,7 +42,7 @@
         </tr>
       </table>
       <a href="{{url_for('edit_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small yellow">Edit</a>
-      <a class="waves-effect waves-light btn btn_small red">Delete</a>
+      <a href="{{url_for('delete_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small red">Delete</a>
     </div>
   </div>
   </div>

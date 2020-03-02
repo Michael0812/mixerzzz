@@ -77,6 +77,13 @@ def update_whisky(whisky_id):
     return redirect(url_for('drinks'))
 
 
+# Delete whisky
+@app.route('/delete_whisky/<whisky_id>')
+def delete_whisky(whisky_id):
+    mongo.db.whisky.remove({'_id': ObjectId(whisky_id)})
+    return redirect(url_for('drinks'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT', '8080')),
