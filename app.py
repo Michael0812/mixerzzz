@@ -51,6 +51,15 @@ def insert_whisky():
     whisky.insert_one(request.form.to_dict())
     return redirect(url_for('drinks'))
 
+# Edit whisky
+@app.route('/edit_whisky/<whisky_id>')
+def edit_whisky(whisky_id):
+    the_whisky =  mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
+    all_categories =  mongo.db.categories.find()
+    return render_template('editwhisky.html', whisky=the_whisky,
+                           categories=all_categories)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT', '8080')),
