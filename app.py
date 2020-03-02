@@ -56,7 +56,7 @@ def insert_whisky():
 def edit_whisky(whisky_id):
     the_whisky =  mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
     all_categories =  mongo.db.categories.find()
-    return render_template('editwhisky.html', whisky=the_whisky,
+    return render_template('pages/editwhisky.html', whisky=the_whisky,
                            categories=all_categories)
 
 
