@@ -4,50 +4,43 @@
 
 <!--SCOTTISH WHISKY-->
 
-
-
-    
-    
-    
-
 <h1 class="page-title center pt-5 mt-5">Scottish</h1>
 
-
 <div class="card-group pl-3 pr-3">
-{% for whisky in whisky %}
-<div class="container">
-<div class="row">
-<div class="col-12">
-  <div class="card">
-    <img class="card-img-top scottish" src="{{ whisky.whisky_img }}" alt="cutty_sark">
-    <div class="card-body">
-      <h5 class="card-title">{{ whisky.whisky_name }}</h5>
-      <p class="card-text">{{ whisky.whisky_description }}</p>
-      <table>
-        <tr>
-          <td>Water</td>
-          <td>{{ whisky.number_water }}</td>
-        </tr>
-        <tr>
-          <td>Ginger Ale</td>
-          <td>{{ whisky.number_ginger }}</td>
-        </tr>
-        <tr>
-          <td>Coke</td>
-          <td>{{ whisky.number_coke }}</td>
-        </tr>
-        <tr>
-          <td>Green Tea</td>
-          <td>{{ whisky.number_green_tea }}</td>
-        </tr>
-      </table>
-      <a href="{{url_for('edit_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small yellow">Edit</a>
-      <a href="{{url_for('delete_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small red">Delete</a>
+  {% for whisky in whisky %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img class="card-img-top scottish" src="{{ whisky.whisky_img }}" alt="cutty_sark">
+          <div class="card-body">
+            <h5 class="card-title">{{ whisky.whisky_name }}</h5>
+            <p class="card-text">{{ whisky.whisky_description }}</p>
+            <table>
+              <tr>
+                <td>Water</td>
+                <td>{{ whisky.number_water }}</td>
+              </tr>
+              <tr>
+                <td>Ginger Ale</td>
+                <td>{{ whisky.number_ginger }}</td>
+              </tr>
+              <tr>
+                <td>Coke</td>
+                <td>{{ whisky.number_coke }}</td>
+              </tr>
+              <tr>
+                <td>Green Tea</td>
+                <td>{{ whisky.number_green_tea }}</td>
+              </tr>
+            </table>
+            <a href="{{url_for('edit_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small yellow">Edit</a>
+            <a href="{{url_for('delete_whisky', whisky_id=whisky._id)}}" class="waves-effect waves-light btn btn_small red">Delete</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-  </div>  
   </div>
   {% endfor %}
 
-{% endblock %}
+  {% endblock %}
