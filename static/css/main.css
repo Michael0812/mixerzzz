@@ -164,13 +164,6 @@ h3 {
     border-radius: 3rem;
   }
 
-/* Drinks Page */
-.card-image
-.card
-.img-responsive{
-    width: 100%;
-}
-
   /*Sign Up */
   .form-group {
     margin-top: 70px;
@@ -184,9 +177,8 @@ h3 {
   /* Media Queries */
   @media only screen and (min-width: 769px) {
     .bottle {
-      width: 400px;
+      width: 500px;
       height: 400px;
-      margin-right: 140px;
     }
   }
 
@@ -195,7 +187,10 @@ h3 {
       margin-left: 10%;
       margin-right: 10%;
     }
-
+    .bottle{
+      margin-left: 50px;
+      width: 100%;
+    }
     .scottish {
       max-height: 400px;
       width: 100%;
