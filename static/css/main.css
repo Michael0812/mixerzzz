@@ -19,6 +19,11 @@
     margin: auto;
   }
 
+  a:hover {
+     text-decoration: none;
+     color: #606060
+  }
+
   nav {
     background-color: #000000;
   }
