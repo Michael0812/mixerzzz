@@ -6,7 +6,6 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-size: 1.4rem;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   background-color: #000000;
   width: 100%;
   height: auto;
+  font-size: 1.3rem;
 }
 
 .row {
@@ -71,6 +71,9 @@ nav {
 .logo-footer {
   height: 90px;
 }
+.name-footer{
+    font-size: 1.6rem;
+}
 
 /* Content */
 h3 {
@@ -89,7 +92,8 @@ h3 {
   opacity: 1px;
 }
 
-.name {
+.name
+.name-footer {
   font-family: 'Gloria Hallelujah', sans-serif;
   letter-spacing: 4.8px;
   color: #FFFFFF;
@@ -161,6 +165,13 @@ h3 {
     border-radius: 3rem;
   }
 
+/* Drinks Page */
+.card-image
+.card
+.img-responsive{
+    width: 100%;
+}
+
   /*Sign Up */
   .form-group {
     margin-top: 70px;
@@ -199,7 +210,7 @@ h3 {
   @media only screen and (max-width: 768px) {
     .bottle {
       height: 400px;
-      width: 450px;
+      width: 60%;
     }
     .logo {
       height: 40px;
