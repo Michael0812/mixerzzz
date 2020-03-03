@@ -17,6 +17,7 @@
 
   .row {
     margin: auto;
+    width: 100%;
   }
 
   a:hover {
@@ -28,10 +29,6 @@
     background-color: #000000;
     
   }
-
-  .navbar {
-  
-}
 
 .nav-link {
   font-weight: bold;
@@ -207,7 +204,8 @@
     .logo{
         height: 40px;
     }
-    .text{
+    .text,
+    h3{
         text-align: center;
     }
   }
