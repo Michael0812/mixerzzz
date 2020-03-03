@@ -40,7 +40,7 @@ def login():
 # Add page
 
 @app.route('/whisky/add')
-def add_whisky():
+def addwhisky():
     return render_template('pages/addwhisky.html',
     categories=mongo.db.categories.find())
 
