@@ -15,7 +15,6 @@ mongo = PyMongo(app)
 
 
 # Home page
-
 @app.route('/')
 def index():
     return render_template('pages/index.html')
@@ -38,21 +37,20 @@ def login():
     return render_template('pages/login.html')
 
 # Add page
-
-@app.route('/whisky/add')
-def addwhisky():
+@app.route('/drink/add')
+def add_whisky():
     return render_template('pages/addwhisky.html',
     categories=mongo.db.categories.find())
 
 
-@app.route('/insert_whisky', methods=['POST'])
+@app.route('/drink/insert', methods=['POST'])
 def insert_whisky():
     whisky = mongo.db.whisky
     whisky.insert_one(request.form.to_dict())
     return redirect(url_for('drinks'))
 
 # Edit whisky
-@app.route('/whisky/edit/<whisky_id>')
+@app.route('/drink/edit/<whisky_id>')
 def edit_whisky(whisky_id):
     the_whisky =  mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
     all_categories =  mongo.db.categories.find()
@@ -60,7 +58,7 @@ def edit_whisky(whisky_id):
                            categories=all_categories)
 
 # Update whisky
-@app.route('/whisky/update/<whisky_id>', methods=["POST"])
+@app.route('/drink/update/<whisky_id>', methods=["POST"])
 def update_whisky(whisky_id):
     whisky = mongo.db.whisky
     whisky.update( {'_id': ObjectId(whisky_id)},
@@ -78,7 +76,7 @@ def update_whisky(whisky_id):
 
 
 # Delete whisky
-@app.route('/whisky/delete/<whisky_id>')
+@app.route('/drink/delete/<whisky_id>')
 def delete_whisky(whisky_id):
     mongo.db.whisky.remove({'_id': ObjectId(whisky_id)})
     return redirect(url_for('drinks'))

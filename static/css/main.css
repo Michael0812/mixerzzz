@@ -125,7 +125,9 @@
     color: white;
 }
 .btn{
-    background-color: #606060;
+    border-radius: 3rem;
+    color: white;
+    
 }
 .input-field{
     color: white;
