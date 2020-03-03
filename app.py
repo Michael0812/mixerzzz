@@ -3,15 +3,17 @@ from flask import Flask, render_template, redirect, request, url_for
 from bson.objectid import ObjectId
 from flask_pymongo import PyMongo, pymongo
 from os import path
-if path.exists("env.py"):
+
+
+if path.exists('env.py'):
   import env 
 
 
 app = Flask(__name__)
 
 # Configuration of database
-app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
+app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
