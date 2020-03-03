@@ -21,12 +21,49 @@
 
   a:hover {
      text-decoration: none;
-     color: #606060
+     color: white;
   }
 
   nav {
     background-color: #000000;
   }
+
+  .navbar {
+  
+}
+
+.nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #606060;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 20px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 69%;
+}
+
   h3{
       font-weight: bold;
   }

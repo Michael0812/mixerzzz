@@ -6,11 +6,11 @@
       <div class="nav-wrapper">
         <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-navbar" alt="logo"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="{{url_for('drinks')}}">DRINKS</a></li>
-          <li><a href="{{url_for('add_whisky')}}">ADD</a></li>
-          <li><a href="{{url_for('login')}}">LOGIN</a></li>
-          <li><a href="{{url_for('register')}}">REGISTER</a></li>
+        <ul id="nav-mobile" class="navbar right hide-on-med-and-down">
+          <li><a class="nav-link nav-link-ltr" href="{{url_for('drinks')}}">DRINKS</a></li>
+          <li><a class="nav-link nav-link-ltr" href="{{url_for('add_whisky')}}">ADD</a></li>
+          <li><a class="nav-link nav-link-ltr" href="{{url_for('login')}}">LOGIN</a></li>
+          <li><a class="nav-link nav-link-ltr" href="{{url_for('register')}}">REGISTER</a></li>
         </ul>
 
         <!-- Mobile navbar-->
