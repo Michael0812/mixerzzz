@@ -26,6 +26,7 @@
 
   nav {
     background-color: #000000;
+    
   }
 
   .navbar {
@@ -45,6 +46,7 @@
 
 .nav-link:hover {
   opacity: 1;
+  
 }
 
 .nav-link::before {
@@ -204,6 +206,9 @@
     }
     .logo{
         height: 40px;
+    }
+    .text{
+        text-align: center;
     }
   }
   
