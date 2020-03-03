@@ -2,14 +2,16 @@ import os
 from flask import Flask, render_template, redirect, request, url_for
 from bson.objectid import ObjectId
 from flask_pymongo import PyMongo, pymongo
+from os import path
+if path.exists("env.py"):
+  import env 
 
 
 app = Flask(__name__)
 
 # Configuration of database
 app.config["MONGO_DBNAME"] = 'whiskyDB'
-app.config["MONGO_URI"] = "mongodb+srv://Michael0812:a7d2hp@myfirstcluster-2ro3f.mongodb.net/whiskyDB?retryWrites=true&w=majority"
-
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
