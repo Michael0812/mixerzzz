@@ -2,11 +2,12 @@
 
 {% block content %}
 
+
 <h1 class="page-title center pt-5 mt-5">Edit Whisky</h1>
 
 <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
   <form action="{{ url_for('update_whisky', whisky_id=whisky._id) }}" method="POST" class="col s12">
-    <div class="row">
+    <div class="row mb-5 pb-3">
         <div class="input-field col s12">
         <i class="material-icons prefix">polly</i>
         <select id="category" name="category_name">
