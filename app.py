@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 
 
 # Home page
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('pages/index.html')
 
@@ -84,6 +84,14 @@ def update_whisky(whisky_id):
 def delete_whisky(whisky_id):
     mongo.db.whisky.remove({'_id': ObjectId(whisky_id)})
     return redirect(url_for('drinks'))
+
+
+# Categories whisky
+@app.route('/')
+@app.route('/get_categories')
+def get_categories():
+    return render_template('pages/categories.html',
+                           categories=mongo.db.categories.find())
 
 
 if __name__ == '__main__':
