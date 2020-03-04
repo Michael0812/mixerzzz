@@ -53,13 +53,15 @@ def insert_whisky():
     whisky.insert_one(request.form.to_dict())
     return redirect(url_for('drinks'))
 
+
 # Edit whisky
-@app.route('/drink/edit/<whisky_id>')
+@app.route('/edit/<whisky_id>')
 def edit_whisky(whisky_id):
     the_whisky =  mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
     all_categories =  mongo.db.categories.find()
     return render_template('pages/editwhisky.html', whisky=the_whisky,
                            categories=all_categories)
+
 
 # Update whisky
 @app.route('/drink/update/<whisky_id>', methods=["POST"])

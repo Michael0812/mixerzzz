@@ -7,13 +7,17 @@
 
 <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
   <form action="{{ url_for('update_whisky', whisky_id=whisky._id) }}" method="POST" class="col s12">
-    <div class="row mb-5 pb-3">
-        <div class="input-field col s12">
+    <div class="row">
+      <div class="input-field col s12">
         <i class="material-icons prefix">polly</i>
         <select id="category" name="category_name">
           <option value="" disabled selected>Choose your option</option>
           {% for cat in categories %}
+          {% if cat.category_name == whisky.category_name %}
+          <option value="{{cat.category_name}}" selected>{{cat.category_name}}</option>
+          {% else %}
           <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+          {% endif %}
           {% endfor %}
         </select>
         <label>Select Whisky</label>
@@ -68,6 +72,7 @@
         <label for="icon_prefix">Scoring: Green Tea</label>
       </div>
     </div>
+    
 
     <!--Submit Form-->
 
