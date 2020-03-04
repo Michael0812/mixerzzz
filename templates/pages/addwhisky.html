@@ -1,8 +1,9 @@
 {% extends 'layout/base.html' %}
 
 {% block content %}
-
+<input id="category_name" name="category_name" type="text">
 <h1 class="page-title center pt-5 mt-5">Add Whisky</h1>
+
 
 <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
   <form action="{{ url_for('insert_whisky') }}" method="POST" class="col s12">
