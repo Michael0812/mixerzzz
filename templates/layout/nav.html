@@ -1,12 +1,15 @@
 {% block navbar %}
 
+<!--Navbar - contains logo, links - easily redirect users to a specific page -->
 <header>
   <nav>
     <div class="container">
       <div class="nav-wrapper">
+      <!--Logo-->
         <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-navbar" alt="logo"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="navbar right hide-on-med-and-down">
+        <!--Links-->
           <li><a class="nav-link nav-link-ltr" href="{{url_for('drinks')}}">DRINKS</a></li>
           <li><a class="nav-link nav-link-ltr" href="{{url_for('add_whisky')}}">ADD</a></li>
           <li><a class="nav-link nav-link-ltr" href="{{url_for('login')}}">LOGIN</a></li>
@@ -14,7 +17,6 @@
         </ul>
 
         <!-- Mobile navbar-->
-
         <ul class="side-nav" id="mobile-demo">
           <li><a href="{{url_for('index')}}">HOME</a></li>
           <li><a href="{{url_for('drinks')}}">DRINKS</a></li>
