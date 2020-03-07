@@ -2,12 +2,13 @@
 
 {% block content %}
 
-
-<h1 class="page-title center pt-5 mt-5">Edit Whisky</h1>
+<!--Edit page - users can easily EDIT & UPDATE specific drink-->
+<h1 class="page-title center pt-5 mt-5">Edit {{whisky.whisky_name}}</h1>
 
 <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
   <form action="{{ url_for('update_whisky', whisky_id=whisky._id) }}" method="POST" class="col s12">
     <div class="row">
+    <!--Category Name-->
       <div class="input-field col s12">
         <i class="material-icons prefix">polly</i>
         <select id="category" name="category_name">
@@ -23,6 +24,7 @@
         <label>Select Whisky</label>
       </div>
     </div>
+    <!--Users can paste link to the image-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix">add_a_photo</i>
@@ -30,6 +32,7 @@
         <label for="icon_add_a_photo">Add an image link</label>
       </div>
     </div>
+    <!--Whisky name-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix">assignment</i>
@@ -37,6 +40,7 @@
         <label for="icon_prefix">Whisky Name</label>
       </div>
     </div>
+    <!--Description about whisky-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix">subject</i>
@@ -44,6 +48,8 @@
         <label for="icon_telephone">Whisky Description</label>
       </div>
     </div>
+    <!--Scoring system-->
+    <!--Water-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/water.svg') }}" alt="Water"></i>
@@ -51,6 +57,7 @@
         <label for="icon_prefix">Scoring: Water</label>
       </div>
     </div>
+    <!--Ginger Ale-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale"></i>
@@ -58,6 +65,7 @@
         <label for="icon_prefix">Scoring: Ginger ale</label>
       </div>
     </div>
+    <!--Coke-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke"></i>
@@ -65,6 +73,7 @@
         <label for="icon_prefix">Scoring: Coke</label>
       </div>
     </div>
+    <!--Green Tea-->
     <div class="row mb-2">
       <div class="input-field col s12">
         <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea"></i>
@@ -75,7 +84,7 @@
     
 
     <!--Submit Form-->
-
+    <!--Users can easily save their updating by clicking "Update"-->
     <div class="row">
       <button class="update btn waves grey" type="submit" name="action">Update
         <i class="material-icons right">send</i>
