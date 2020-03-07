@@ -1,13 +1,17 @@
-{% block footer %}
+            <!-- Footer -->
 
-<footer class="page-footer pt-3 mt-4 responsive">
+<footer class="page-footer pt-3 mt-4 grey">
+
   <div class="container text-center text-md-left responsive">
     <div class="row">
       <div class="col-md-5 col-lg-5 mt-md-1 mt-3 pr-lg-2 mr-lg-2 mr-md-4 pb-1">
         <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-footer" alt="logo"></a>
         <p class="name-footer mt-3">MIXERZZZ</p>
       </div>
-      <div class="col-md-3 mb-3">
+
+            <!-- Links - users can easily go to different pages do not wasting time for scrolling -->
+
+      <div class="col-md-3 mb-md-0 mb-3">
         <ul class="list-unstyled">
           <li class="address pt-3 pb-3">
             <a href="{{url_for('drinks')}}" class="address">Drinks</a>
@@ -20,13 +24,13 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-3">
+
+            <!--Social media - users are allowed to connect with social media(twitter, facebook, instagram) -->
+
+      <div class="col-md-3 mb-md-0 mb-3">
         <h5>Follow Us:</h5>
         <ul class="list-unstyled">
           <li>
-
-  <!--Social media -->
-
             <a href="https://twitter.com/WhiskyExchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/twitter.svg') }}" class="social" alt="twitter-icon"></a>
             <a href="https://www.facebook.com/thewhiskyexchange" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/facebook.svg') }}" class="social" alt="facebook-icon"></a>
             <a href="https://www.instagram.com/whiskyexchange/" target="_blank" rel="noopener"><img src="{{ url_for('static', filename='img/instagram.svg') }}" class="social" alt="instagram-icon"></a>
@@ -35,8 +39,8 @@
       </div>
     </div>
   </div>
-
-  <!-- Copyright -->
+ 
+            <!-- Copyright -->
 
   <div class="footer-copyright center pt-4">
     <div class="container">
@@ -44,5 +48,3 @@
     </div>
   </div>
 </footer>
-
-{% endblock %}

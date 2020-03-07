@@ -9,4 +9,3 @@
         $(".button-collapse").sideNav();
         $('select').formSelect();
     });
-
