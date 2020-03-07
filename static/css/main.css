@@ -200,9 +200,7 @@ h3 {
       width: 75%;
     }
   }
-.material-icons{
-    
-}
+
   @media only screen and (max-width: 768px) {
     .bottle {
       height: 400px;
