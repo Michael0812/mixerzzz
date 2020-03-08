@@ -1,1 +1,1 @@
-<a href="https://ibb.co/NTMQCSh"><img src="https://i.ibb.co/fDsBFvR/responsive-img.png" alt="responsive-img"></a>
+<a href="https://mixerzzz.herokuapp.com/"><img src="https://i.ibb.co/1dx59C8/banner-img.png" alt="banner-img" border="0"></a>
