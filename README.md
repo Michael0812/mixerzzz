@@ -42,3 +42,11 @@ To deploy this page to GitHub Pages from its Github repository, the following st
 ## Testing
 Testing can be found in [TESTING.md](TESTING.md)
 
+
+## Credits
+
+ - Logo was made by [Lidia Kabala](https://www.linkedin.com/in/lidia-kabala-3b2036137/)
+ 
+ - Text - was copied from the book [Whisky - The Manual Dave Broom](https://www.goodreads.com/book/show/17899896-whisky)
+ 
+ - Images - was copied and shared from [The whisky exchange](https://www.thewhiskyexchange.com/)
