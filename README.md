@@ -28,12 +28,12 @@ To deploy this page to GitHub Pages from its Github repository, the following st
 7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 8. Set the following config vars:
 
-```IP```  :  0.0.0.0
-```MONGO_DBNAME```  :  ```database name```
-```MONGO_URI```  :  ```mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority```
-```PORT```  :  5000
+- ```IP```  :  0.0.0.0
+- ```MONGO_DBNAME```  :  ```database name```
+- ```MONGO_URI```  :  ```mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority```
+- ```PORT```  :  5000
 
 
 9. In the heroku dashboard, click "Deploy".
 10. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
-11.The site is now successfully deployed.
+11. The site is now successfully deployed.
