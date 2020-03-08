@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for
 from bson.objectid import ObjectId
 from flask_pymongo import PyMongo, pymongo
 from os import path
@@ -11,9 +11,11 @@ if path.exists('env.py'):
 
 app = Flask(__name__)
 
+
 # Configuration of database
 app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
+
 
 mongo = PyMongo(app)
 
@@ -29,6 +31,7 @@ def index():
 def drinks():
     return render_template('pages/drinks.html', whisky=mongo.db.whisky.find())
 
+
 # Register page
 @app.route('/register.html')
 def register():
@@ -40,11 +43,12 @@ def register():
 def login():
     return render_template('pages/login.html')
 
+
 # Add page
 @app.route('/drink/add')
 def add_whisky():
-    return render_template('pages/addwhisky.html',
-    categories=mongo.db.categories.find())
+    categories=mongo.db.categories.find(),
+    return render_template('pages/addwhisky.html')
 
 
 @app.route('/drink/insert', methods=['POST'])
