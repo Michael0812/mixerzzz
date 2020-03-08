@@ -37,3 +37,8 @@ To deploy this page to GitHub Pages from its Github repository, the following st
 9. In the heroku dashboard, click "Deploy".
 10. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 11. The site is now successfully deployed.
+
+
+## Testing
+Testing can be found in [TESTING.md](TESTING.md)
+
