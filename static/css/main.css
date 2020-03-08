@@ -92,6 +92,7 @@ h3 {
   opacity: 1px;
 }
 
+}
 .name,
 .name-footer {
   font-family: 'Gloria Hallelujah', sans-serif;
@@ -214,9 +215,3 @@ h3 {
     }
   }
 
-  @media only screen and (max-width: 568px) {
-    .bottle {
-      height: 330px;
-      width: 320px;
-      padding-right: 20px;
-    }
