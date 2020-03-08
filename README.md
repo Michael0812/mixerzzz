@@ -1,5 +1,31 @@
 <a href="https://ibb.co/NTMQCSh"><img src="https://i.ibb.co/fDsBFvR/responsive-img.png" alt="responsive-img"></a>
 
+## Technologies Used
+
+- Languages:
+
+- #### HTML
+- #### CSS
+- #### JavaScript
+- #### Python
+
+-Tools:
+
+- #### [Gitpod](https://www.gitpod.io/)
+- #### [Github](https://github.com/)
+- #### [MongoDB](https://www.mongodb.com/)
+- #### [Git](https://git-scm.com/)
+- #### [PIP](https://pypi.org/)
+
+-Libraries:
+
+- #### [JQuery](https://jquery.com/)
+- #### [Bootstrap](https://getbootstrap.com/)
+- #### [Flask](https://palletsprojects.com/p/flask/)
+- #### [PyMongo](https://api.mongodb.com/python/current/)
+- #### [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- #### [Google Fonts](https://fonts.google.com/)
+- #### [Materialize](https://materializecss.com/)
 
 
 ## Deployment
