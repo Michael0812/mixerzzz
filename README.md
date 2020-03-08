@@ -2,30 +2,30 @@
 
 ## Technologies Used
 
-- Languages:
+#### Languages:
 
-- #### HTML
-- #### CSS
-- #### JavaScript
-- #### Python
+- HTML
+- CSS
+- JavaScript
+- Python
 
--Tools:
+#### Tools:
 
-- #### [Gitpod](https://www.gitpod.io/)
-- #### [Github](https://github.com/)
-- #### [MongoDB](https://www.mongodb.com/)
-- #### [Git](https://git-scm.com/)
-- #### [PIP](https://pypi.org/)
+- [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Git](https://git-scm.com/)
+- [PIP](https://pypi.org/)
 
--Libraries:
+#### Libraries:
 
-- #### [JQuery](https://jquery.com/)
-- #### [Bootstrap](https://getbootstrap.com/)
-- #### [Flask](https://palletsprojects.com/p/flask/)
-- #### [PyMongo](https://api.mongodb.com/python/current/)
-- #### [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-- #### [Google Fonts](https://fonts.google.com/)
-- #### [Materialize](https://materializecss.com/)
+- [JQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- Flask](https://palletsprojects.com/p/flask/)
+- [PyMongo](https://api.mongodb.com/python/current/)
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- [Google Fonts](https://fonts.google.com/)
+- [Materialize](https://materializecss.com/)
 
 
 ## Deployment
