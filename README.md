@@ -21,7 +21,7 @@
 
 - [JQuery](https://jquery.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- Flask](https://palletsprojects.com/p/flask/)
+- [Flask](https://palletsprojects.com/p/flask/)
 - [PyMongo](https://api.mongodb.com/python/current/)
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 - [Google Fonts](https://fonts.google.com/)
@@ -76,3 +76,9 @@ Testing can be found in [TESTING.md](TESTING.md)
  - Text - was copied from the book [Whisky - The Manual Dave Broom](https://www.goodreads.com/book/show/17899896-whisky)
  
  - Images - was copied and shared from [The whisky exchange](https://www.thewhiskyexchange.com/)
+ 
+ ##### Also, I was working with different websites that gave me some helps, advices and ideas for this project:
+- [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn)
+- [w3schools](https://www.w3schools.com)
+- [Google developers](https://developers.google.com/)
+- [awwwards](https://www.awwwards.com)
