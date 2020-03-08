@@ -47,8 +47,8 @@ def login():
 # Add page
 @app.route('/drink/add')
 def add_whisky():
-    categories=mongo.db.categories.find(),
-    return render_template('pages/addwhisky.html')
+    return render_template('pages/addwhisky.html',
+            categories=mongo.db.categories.find())
 
 
 @app.route('/drink/insert', methods=['POST'])
