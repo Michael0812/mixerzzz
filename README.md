@@ -113,4 +113,3 @@ Testing can be found in [TESTING.md](TESTING.md)
 
 
 [Back to the top](#navigation)
->>>>>>> 8a02c73e225ff13c57894f2521df65189ab8c5e9
