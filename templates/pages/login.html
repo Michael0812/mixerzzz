@@ -1,34 +1,25 @@
 {% extends 'layout/base.html' %} 
 {% block content %}
 
-<div class="container-responsive">
+<div class="container pt-4 mt-5">
   <div class="row">
-    <div class="col-md-12 pt-5">
-      <h1 class="center">Login</h1>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6 pb-5 mb-5 center">
-              <div class="form-group">
-            <!--Flash Message-->
-                <div class="container">
-                </div>
-            <!--Login-->
-                <form action="" method="POST" class="col-md-12">
-                  <div class="form-group">
-            <!--Username-->
-                    <div class="form-group">
-                      <label for="inputUsername" class="username">Username</label>
-                      <input type="text" class="form-control" name="username" placeholder="Please, type your username" required="" minlength="3">
-                    </div>
-            <!--Password-->
-                    <div class="form-group">
-                      <label for="inputPassword" class="password">Password</label>
-                      <input type="password" class="form-control" name="pass" placeholder="Please, type your unique password" required="" minlength="4">
-                    </div>
-            <!--Submit-->
+    <div class="col-12">
+      <h1 class="center white-text">Login</h1>
+      <!--Username-->
+      <form id="new-account-form">
+        <div class="form-group">
+          <label for="newUsername">Username</label>
+          <input id="newUsername" type="text" class="form-control white-text" maxlength="40" label="Enter a username" placeholder="Please, enter a username" required>
+        </div>
+        <!--Password-->
+        <div class="form-group">
+          <label for="newPasswordInput">Password</label>
+          <input id="newPasswordInput" type="password" class="form-control white-text" maxlength="20" minlength="8" placeholder="Please, enter your assword" required>
+        </div>
+        <button class="btn waves-effect waves-light grey" type="submit" id="sendSignupButton">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
                     
-        {% endblock %}
+    {% endblock %}
