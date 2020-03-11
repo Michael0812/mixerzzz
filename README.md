@@ -1,4 +1,4 @@
-<a href="https://ibb.co/NTMQCSh"><img src="https://i.ibb.co/fDsBFvR/responsive-img.png" alt="responsive-img"></a>
+<img src="https://i.ibb.co/fDsBFvR/responsive-img.png" style="max-width:100%;" alt="responsive-img">
 
 ## Navigation
 
@@ -26,7 +26,7 @@
 - HTML
 - CSS
 - JavaScript
-- Python
+- [Python](https://www.python.org/)
 
 #### Tools:
 
@@ -39,7 +39,6 @@
 #### Libraries:
 
 - [JQuery](https://jquery.com/)
-- [Bootstrap](https://getbootstrap.com/)
 - [Flask](https://palletsprojects.com/p/flask/)
 - [PyMongo](https://api.mongodb.com/python/current/)
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
