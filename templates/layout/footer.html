@@ -1,38 +1,35 @@
 {% block footer %}
             <!-- Footer -->
 
-<footer class="page-footer pt-3 mt-4 dark-grey">
-
-  <div class="container text-center text-md-left responsive">
-    <div class="row">
-      <div class="col-md-5 col-lg-5 mt-md-1 mt-3 pr-lg-2 mr-lg-2 mr-md-4 pb-1">
-        <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-footer" alt="logo"></a>
-        <span class="name-footer mt-3">MIXERZZZ</span>
-      </div>
-
-            <!-- Links - users can easily go to different pages do not wasting time for scrolling -->
-
-      <div class="col-md-3 mb-md-0 mb-3">
-        <ul class="list-unstyled">
-          <li class="address pt-3 pb-3">
-            <a href="{{url_for('drinks')}}" class="address">Drinks</a>
-          </li>
-        </ul>
-      </div>
-
-            <!--Social media - users are allowed to connect with social media(twitter, facebook, instagram) -->
-
-        <div class="col-md-3 mb-md-0 mb-3">
-            {% include 'components/social.html' %}
-        </div>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 center m6 l3">
+                <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-footer" alt="logo"></a>
+                    <p class="name-footer mt-3">MIXERZZZ</p>
+              </div>
+              <div class="col s12 m6 l6 center">
+                <ul>
+                  <li class="address">
+                    <a href="{{url_for('drinks')}}" class="address">Drinks</a>
+                  </li>
+                  <li>
+                    <a href="" class="address">Add</a>
+                    </li>
+                    <li>
+                    <a href="" class="address">Contact</a>
+                </li>
+                </ul>
+              </div>
+              <div class="col s12 center m6 l3">
+                {% include 'components/social.html' %}
+              </div>
             </div>
-                </div>
-            <!-- Copyright -->
-
-  <div class="footer-copyright center pt-4">
-    <div class="container">
-      <p>© 2020 MIXERZZZ - ALL RIGHTS RESERVED</p>
-    </div>
-  </div>
-</footer>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <p class="center">2020 MIXERZZZ - ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+        </footer>
 {% endblock %}

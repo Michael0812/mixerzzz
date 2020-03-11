@@ -64,6 +64,7 @@ nav {
 /* LOGO */
 .logo-navbar {
     height: 50px;
+    margin-top: 0.5rem;
 }
 
 .logo-footer {
@@ -165,6 +166,7 @@ h3 {
   /* Media Queries */
 @media only screen and (min-width: 769px) {
     .bottle {
+        margin-top: 6rem;
         width: 500px;
         height: 400px;
     }
@@ -192,9 +194,11 @@ h3 {
 @media only screen and (max-width: 768px) {
     .bottle {
         height: 400px;
+        margin-top: 2rem;
     }
-    .logo {
-        height: 40px;
+    .logo-navbar {
+        height: 30px;
+        margin-top: 0.7rem;
     }
     .text,
     h3 {
