@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <img src="https://i.ibb.co/fDsBFvR/responsive-img.png" class="img-responsive" style="width:100%" >
+=======
+<img src="https://i.ibb.co/fDsBFvR/responsive-img.png" style="max-width:100%;" alt="responsive-img">
+>>>>>>> 6e9c8ca5bff376b56262b799eb09d67bf8b9080d
 
 ## Navigation
 
