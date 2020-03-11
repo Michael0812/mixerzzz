@@ -9,84 +9,87 @@
 </div>
 
 <!--Main Content - contains unique name of the page and content what the page is about for-->
-
-<div class="container pb-4">
-  <div class="row">
-    <div class="col sm-12 mx-auto center">
-      <h3>Welcome to </h3>
-      <span class="name">MIXERZZZ</span>
-      
-      <p class="content center pt-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries,
-        also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open
-        your mouth when bending your elbow. Well, yes and no. </p>
+<section class="main-content">
+    <div class="container pb-4">
+        <div class="row">
+            <div class="col sm-12 mx-auto center">
+                <h3>Welcome to </h3>
+                <span class="name">MIXERZZZ</span>
+                <p class="content center pt-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries,
+                    also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open
+                    your mouth when bending your elbow. Well, yes and no. </p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
+</section>
 <!--Mixing Section - contains information about mixing and image that is invisible on small devices for save data usage & better look-->
 
-<div class="container pb-4">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 ">
-      <h3>Mixing</h3>
-      <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for
-        effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for
-        that bottle of water, my friend, and pour it over their hand - saving some for your dram.
-      </p>
+<section class="mixing">
+    <div class="container pb-4">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 ">
+                <h3>Mixing</h3>
+                <p class="text">Any time that whisky has achieved popularity has been when it’s been diluted. Toddies, Slings, grog, Juleps, the Whisky Punch and the Highball are the drinks that elevated whisky from being a burning, neat spirit drunk for
+                    effect into something that people enjoyed consuming. The same applies today. The idea that it should only ever be consumed neat is a new phenomenon. So, if anyone - friend, bartender, or writer - orders you to drink whisky neat, reach for
+                    that bottle of water, my friend, and pour it over their hand - saving some for your dram.
+                </p>
+                </div>
+                <div class="col-sm-12 col-lg-6 pt-5 mt-5">
+                <img src="{{ url_for('static', filename='img/bottle.jpg') }}" alt="bottle" class="bottle pr-5 mr-5 d-none d-sm-block">
+            </div>
+        </div>
     </div>
-    <div class="col-sm-12 col-lg-6 pt-5 mt-5">
-      <img src="{{ url_for('static', filename='img/bottle.jpg') }}" alt="bottle" class="bottle pr-5 mr-5 d-none d-sm-block">
-    </div>
-  </div>
-</div>
-
+</section>
 <!--Drinks - contains image and gives information for users about drinks that they can mix with whisky-->
 
-<div class="container-responsive text-center mt-3 pt-4 mt-sm-1 pt-sm-2">
-  <div class="row">
-    <!--Water-->
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
-      <p class="drinks">WATER</p>
-      <p>It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
+<section class="drinks-section">
+    <div class="container-responsive text-center mt-3 pt-4 mt-sm-1 pt-sm-2">
+        <div class="row">
+            <!--Water-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+            <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
+            <p class="drinks">WATER</p>
+            <p>It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
+            </div>
+            <!--Ginger Ale-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+            <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale" class="drinks mb-2">
+            <p class="drinks">GINGER ALE</p>
+            <p class="ginger pt-md-3 mt-md-5 pt-lg-2 mt-lg-5">The addition of bubbles to ginger-infused water produces whisky’s finest mixer, as the ginger is a natural partner with the sweet spices in many whiskies. Importantly, ginger also extend the
+                finish of any whisky.</p>
+            </div>
+            <!--Coke-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+            <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mb-2">
+            <p class="drinks">COKE</p>
+            <p class="coke pt-lg-2">Coke’s ubiquity as a soft drink has helped it become the go-to mixer for many spirits, and whisky is no exception. It was coke that elevated blended Scotch to mass-market appeal in Spain in the 1990s.</p>
+            </div>
+            <!--Green Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+            <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mb-2">
+            <p class="drinks">GREEN TEA</p>
+            <p class="green-tea pt-md-4 mt-md-4 pt-lg-4 mt-lg-4">Green Tea - Green tea is the most common version of this mixer to be used, but the high sugar levels of some brand alter the balance of the drink, making it too saccharine. Sugar is important
+                as green tea will have a dry grip that combines with the oak in the whisky</p>
+            </div>
+        </div>
     </div>
-    <!--Ginger Ale-->
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale" class="drinks mb-2">
-      <p class="drinks">GINGER ALE</p>
-      <p class="ginger pt-md-3 mt-md-5 pt-lg-2 mt-lg-5">The addition of bubbles to ginger-infused water produces whisky’s finest mixer, as the ginger is a natural partner with the sweet spices in many whiskies. Importantly, ginger also extend the
-        finish of any whisky.</p>
-    </div>
-    <!--Coke-->
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mb-2">
-      <p class="drinks">COKE</p>
-      <p class="coke pt-lg-2">Coke’s ubiquity as a soft drink has helped it become the go-to mixer for many spirits, and whisky is no exception. It was coke that elevated blended Scotch to mass-market appeal in Spain in the 1990s.</p>
-    </div>
-    <!--Green Tea-->
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mb-2">
-      <p class="drinks">GREEN TEA</p>
-      <p class="green-tea pt-md-4 mt-md-4 pt-lg-4 mt-lg-4">Green Tea - Green tea is the most common version of this mixer to be used, but the high sugar levels of some brand alter the balance of the drink, making it too saccharine. Sugar is important
-        as green tea will have a dry grip that combines with the oak in the whisky</p>
-    </div>
-  </div>
-</div>
+</section>
 
 <!--Scoring section - gives the users information about scoring system and how they can rate when they adding or editing new drink -->
 
-<div class="container">
-  <p class="scoring-text">The scores indicate how good the mix is, not what the quality of the whisky is. If a whisky is best neat, drink it neat. This is a guide to how best to enjoy it. So work your way through the following page, try the combinatines, enjoy them and then find your own.</p>
-  <div class="row pt-5 mt-5">
-    <div class="col">
-      <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number ml-2 mb-2" alt="number 1">Avoid.</p>
-      <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-2" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>
-      <p class="scoring"><img src="{{ url_for('static', filename='img/3.svg') }}" class="number mb-2" alt="number 3">Good drink, with everything in balance. I’d be happy with one of these. I might not have two.</p>
-      <p class="scoring"><img src="{{ url_for('static', filename='img/4.svg') }}" class="number mb-2" alt="number 4">Great drink. This is where the whisky is beginning to shed some of its seven veils, the drink is more than the sum of its two parts.
-      </p>
-      <p class="scoring mb-4"><img src="{{ url_for('static', filename='img/5.svg') }}" class="number mb-2" alt="number 5">The best. A musty-try. The whisky transormed into a munificent drink.</p>
+<section class="scoring-section">
+    <div class="container">
+    <p class="scoring-text">The scores indicate how good the mix is, not what the quality of the whisky is. If a whisky is best neat, drink it neat. This is a guide to how best to enjoy it. So work your way through the following page, try the combinatines, enjoy them and then find your own.</p>
+        <div class="row pt-5 mt-5">
+            <div class="col">
+            <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number ml-2 mb-2" alt="number 1">Avoid.</p>
+            <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-2" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>
+            <p class="scoring"><img src="{{ url_for('static', filename='img/3.svg') }}" class="number mb-2" alt="number 3">Good drink, with everything in balance. I’d be happy with one of these. I might not have two.</p>
+            <p class="scoring"><img src="{{ url_for('static', filename='img/4.svg') }}" class="number mb-2" alt="number 4">Great drink. This is where the whisky is beginning to shed some of its seven veils, the drink is more than the sum of its two parts.
+            </p>
+            <p class="scoring mb-4"><img src="{{ url_for('static', filename='img/5.svg') }}" class="number mb-2" alt="number 5">The best. A musty-try. The whisky transormed into a munificent drink.</p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
+</section>
 {% endblock %}
