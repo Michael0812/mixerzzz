@@ -5,16 +5,17 @@
 <!--Drinks page - Users are allowed to READ, EDIT(Update) & DELETE cards with drink (images, category, drinks, description, mixing)-->
 
 {% for whisky in whisky %}
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="card">
-            {% include 'components/cards.html' %}
-      </div>
+<section class="drinks-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    {% include 'components/cards.html' %}
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 {% endfor %}
 
 {% endblock %}
