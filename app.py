@@ -32,18 +32,6 @@ def drinks():
     return render_template('pages/drinks.html', whisky=mongo.db.whisky.find())
 
 
-# Register page
-@app.route('/register.html')
-def register():
-    return render_template('pages/register.html')
-
-
-# Login page
-@app.route('/login.html')
-def login():
-    return render_template('pages/login.html')
-
-
 # Add page
 @app.route('/drink/add')
 def add_whisky():
