@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik|Gloria+Hallelujah|Material+Icons&display=swap');
 
-
 html {
     margin: 0;
     padding: 0;
@@ -35,7 +34,7 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
-    margin: 0px 20px;
+    margin: 0px 1.25rem;
     display: inline-block;
     position: relative;
     opacity: 0.75;
@@ -55,7 +54,7 @@ nav {
 
 .nav-link-ltr::before {
     width: 0%;
-    bottom: 20px;
+    bottom: 1.25rem;
 }
 
 .nav-link-ltr:hover::before {
@@ -100,7 +99,7 @@ h3 {
 }
 
 .drinks {
-    margin-top: 10px;
+    margin-top: 0,625rem;
 }
 
 .number {
@@ -110,7 +109,7 @@ h3 {
 
 .scoring-text {
     color: #FFFFFF;
-    margin-top: 50px;
+    margin-top: 3.5rem;
     padding-top: 70px;
     text-align: center;
 }
@@ -131,7 +130,7 @@ h3 {
 /* Social Media */
 .social {
     height: 30px;
-    margin-right: 15px;
+    margin-right: 1rem;
     margin-top: 7px;
 }
 
@@ -141,7 +140,7 @@ h3 {
 }
 
 .number {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .card-scoring {
@@ -163,16 +162,6 @@ h3 {
     border-radius: 3rem;
 }
 
-  /*Sign Up */
-.form-group {
-    margin-top: 70px;
-}
-
-.username,
-.password {
-    font-size: 1.6rem;
-}
-
   /* Media Queries */
 @media only screen and (min-width: 769px) {
     .bottle {
@@ -187,7 +176,7 @@ h3 {
         margin-right: 10%;
     }
     .bottle{
-        margin-left: 50px;
+        margin-left: 3.1rem;
         width: 100%;
     }
     .scottish {
