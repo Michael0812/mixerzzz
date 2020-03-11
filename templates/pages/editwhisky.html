@@ -3,93 +3,94 @@
 {% block content %}
 
 <!--Edit page - users can easily EDIT & UPDATE specific drink-->
-<h1 class="page-title center pt-5 mt-5">Edit {{whisky.whisky_name}}</h1>
+<section class="editing-section">
+    <h1 class="page-title center pt-5 mt-5">Edit {{whisky.whisky_name}}</h1>
 
-<div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
-  <form action="{{ url_for('update_whisky', whisky_id=whisky._id) }}" method="POST" class="col s12">
-    <div class="row">
-    <!--Category Name-->
-     <div class="input-field col s12">
-        <i class="material-icons prefix">polly</i>
-        <select id="category" name="category_name">
-          <option value="" disabled selected>Choose your option</option>
-          {% for cat in categories %}
-          {% if cat.category_name == whisky.category_name %}
-          <option value="{{cat.category_name}}" selected>{{cat.category_name}}</option>
-          {% else %}
-          <option value="{{cat.category_name}}">{{cat.category_name}}</option>
-          {% endif %}
-          {% endfor %}
-        </select>
-        <label>Select Whisky</label>
-      </div>
+    <div class="row add-form pt-5 pb-5 mb-3 pr-4 pl-4">
+    <form action="{{ url_for('update_whisky', whisky_id=whisky._id) }}" method="POST" class="col s12">
+        <div class="row">
+        <!--Category Name-->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">polly</i>
+                <select id="category" name="category_name">
+                <option value="" disabled selected>Choose your option</option>
+                {% for cat in categories %}
+                {% if cat.category_name == whisky.category_name %}
+                <option value="{{cat.category_name}}" selected>{{cat.category_name}}</option>
+                {% else %}
+                <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                {% endif %}
+                {% endfor %}
+                </select>
+                <label>Select Whisky</label>
+            </div>
+        </div>
+        <!--Users can paste link to the image-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">add_a_photo</i>
+                <input id="whisky_img" value="{{whisky.whisky_img}}" name="whisky_img" type="url" class="validate" required>
+                <label for="icon_add_a_photo">Add an image link</label>
+            </div>
+        </div>
+        <!--Whisky name-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input id="whisky_name" value="{{whisky.whisky_name}}" name="whisky_name" type="text" class="validate" required>
+                <label for="icon_prefix">Whisky Name</label>
+            </div>
+        </div>
+        <!--Description about whisky-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons text-test prefix">subject</i>
+                <textarea name="whisky_description" id="whisky_description" class="materialize-textarea">{{whisky.whisky_description}}</textarea>
+                <label for="icon_telephone">Whisky Description</label>
+            </div>
+        </div>
+        <!--Scoring system-->
+        <!--Water-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/water.svg') }}" alt="Water"></i>
+                <input id="number_water" value="{{whisky.number_water}}" name="number_water" type="number" class="validate" min="1" max="5" required>
+                <label for="icon_prefix">Scoring: Water</label>
+            </div>
+        </div>
+        <!--Ginger Ale-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale"></i>
+                <input id="number_ginger" value="{{whisky.number_ginger}}" name="number_ginger" type="number" class="validate" min="1" max="5" required>
+                <label for="icon_prefix">Scoring: Ginger ale</label>
+            </div>
+        </div>
+        <!--Coke-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke"></i>
+                <input id="number_coke" value="{{whisky.number_coke}}" name="number_coke" type="number" class="validate" min="1" max="5" required>
+                <label for="icon_prefix">Scoring: Coke</label>
+            </div>
+        </div>
+        <!--Green Tea-->
+        <div class="row mb-2">
+            <div class="input-field col s12">
+                <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea"></i>
+                <input id="number_green_tea" value="{{whisky.number_green_tea}}" name="number_green_tea" type="number" class="validate" min="1" max="5" required>
+                <label for="icon_prefix">Scoring: Green Tea</label>
+            </div>
+        </div>
+        <!--Submit Form-->
+        <!--Users can easily save their updating by clicking "Update"-->
+        <div class="row">
+            <button class="update btn waves grey" type="submit" name="action">Update
+                <i class="material-icons right">send</i>
+            </button>
+            </div>
+            <a href="{{url_for('index')}}" class="cancel btn waves grey mt-4">Cancel</a>
+    </form>
     </div>
-    <!--Users can paste link to the image-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">add_a_photo</i>
-        <input id="whisky_img" value="{{whisky.whisky_img}}" name="whisky_img" type="url" class="validate" required>
-        <label for="icon_add_a_photo">Add an image link</label>
-      </div>
-    </div>
-      <!--Whisky name-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">assignment</i>
-        <input id="whisky_name" value="{{whisky.whisky_name}}" name="whisky_name" type="text" class="validate" required>
-        <label for="icon_prefix">Whisky Name</label>
-      </div>
-    </div>
-    <!--Description about whisky-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons text-test prefix">subject</i>
-        <textarea name="whisky_description" id="whisky_description" class="materialize-textarea">{{whisky.whisky_description}}</textarea>
-        <label for="icon_telephone">Whisky Description</label>
-      </div>
-    </div>
-    <!--Scoring system-->
-    <!--Water-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/water.svg') }}" alt="Water"></i>
-        <input id="number_water" value="{{whisky.number_water}}" name="number_water" type="number" class="validate" min="1" max="5" required>
-        <label for="icon_prefix">Scoring: Water</label>
-      </div>
-    </div>
-    <!--Ginger Ale-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale"></i>
-        <input id="number_ginger" value="{{whisky.number_ginger}}" name="number_ginger" type="number" class="validate" min="1" max="5" required>
-        <label for="icon_prefix">Scoring: Ginger ale</label>
-      </div>
-    </div>
-    <!--Coke-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix"><img class="icon-form pl-2" src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke"></i>
-        <input id="number_coke" value="{{whisky.number_coke}}" name="number_coke" type="number" class="validate" min="1" max="5" required>
-        <label for="icon_prefix">Scoring: Coke</label>
-      </div>
-    </div>
-    <!--Green Tea-->
-    <div class="row mb-2">
-      <div class="input-field col s12">
-        <i class="material-icons prefix"><img class="icon-form" src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea"></i>
-        <input id="number_green_tea" value="{{whisky.number_green_tea}}" name="number_green_tea" type="number" class="validate" min="1" max="5" required>
-        <label for="icon_prefix">Scoring: Green Tea</label>
-      </div>
-    </div>
-    <!--Submit Form-->
-    <!--Users can easily save their updating by clicking "Update"-->
-    <div class="row">
-      <button class="update btn waves grey" type="submit" name="action">Update
-        <i class="material-icons right">send</i>
-      </button>
-    </div>
-    <a href="{{url_for('index')}}" class="cancel btn waves grey mt-4">Cancel</a>
-  </form>
-</div>
-
+</section>
 {% endblock %}
