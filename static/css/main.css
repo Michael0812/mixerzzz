@@ -99,10 +99,28 @@ h3 {
     opacity: 1;
 }
 
-.drinks {
-    margin-top: 0,625rem;
+.drinks,
+.mixing,
+.scoring-section {
+    margin-top: 1.6rem;
 }
 
+.scoring-text{
+    margin-bottom: 3.2rem;
+}
+
+.scoring{
+
+}
+
+.drinks-ginger{
+    margin-top: 4rem;
+}
+
+.drinks-page{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 .number {
     height: 35px;
     margin-right: 1.7rem;
@@ -113,6 +131,11 @@ h3 {
     margin-top: 3.5rem;
     padding-top: 70px;
     text-align: center;
+}
+
+.drinks-section{
+    margin-top: 2rem;
+    padding-top: 4rem;
 }
 
 /* FOOTER */
