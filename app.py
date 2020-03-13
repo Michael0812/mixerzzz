@@ -93,6 +93,13 @@ def delete_whisky(whisky_id):
     return redirect(url_for('drinks'))
 
 
+# Contact page
+@app.route('contact')
+def contact_page:
+    """Contact Page - user can easily contact with admin sending a message to him.
+    Also, user can choose if he wants to getting newsletter"""
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT', '8080')),
