@@ -2,12 +2,21 @@
 
 {% block content  %}
 
-<!--Banner - visivle on all devices-->
-
-<div class="row">
-  <img src="{{ url_for('static', filename='img/banner.jpg') }}" class="banner responsive-img" alt="banner">
-  <h3>Welcome to </h3>
+<!--Banner - visible on large devices( title is on top of the banner to give the user information on what website is it on-->
+<div class="row center">
+<div class="row centered hide-on-small-only">
+  <img src="{{ url_for('static', filename='img/banner.jpeg') }}" class="banner responsive-img" alt="banner">
+  <div class="text-block center">
+    <h3>Welcome to </h3>
     <span class="name">MIXERZZZ</span>
+  </div>
+</div>
+</div>
+
+<!--Banner - visible only on small devices for better look(title is below the banner)-->
+
+<div class="row hide-on-med-and-up">
+  <img src="{{ url_for('static', filename='img/banner.jpg') }}" class="banner responsive-img " alt="banner">
 </div>
 
 <!--Main Content - contains unique name of the page and content what the page is about for-->
@@ -16,7 +25,8 @@
     <div class="container pb-4">
         <div class="row">
             <div class="col sm-12 mx-auto center">
-                
+                <h3 class="hide-on-med-and-up">Welcome to </h3>
+                <span class="name hide-on-med-and-up">MIXERZZZ</span>
                 <p class="content center pt-4">Are you a Whisky lover? Do you think you know it all? Presenting the best ever website on how to really drink whiskey! To be more precise, this is an app about how whisky has been enjoyed down the centuries,
                     also it offers ideas on how to maximize your pleasure and taste when you next look at an off-license shell or back bar. Apparently that’s simple, you might think - open the bottle, take a glass and pour liquid into it.. and remember to open
                     your mouth when bending your elbow. Well, yes and no. </p>
@@ -84,7 +94,7 @@
 <section class="scoring-section">
     <div class="container">
     <p class="scoring-text">The scores indicate how good the mix is, not what the quality of the whisky is. If a whisky is best neat, drink it neat. This is a guide to how best to enjoy it. So work your way through the following page, try the combinatines, enjoy them and then find your own.</p>
-        <div class="row mt-5">
+        <div class="row">
             <div class="col">
                 <p class="scoring"><img src="{{ url_for('static', filename='img/1.svg') }}" class="number mt-3" alt="number 1">Avoid.</p>
                 <p class="scoring"><img src="{{ url_for('static', filename='img/2.svg') }}" class="number mb-2" alt="number 2">So-so drink with a clash taking place. Seek another option.</p>

@@ -75,6 +75,12 @@ nav {
 }
 
 /* Content */
+
+.home-title{
+    position: relative;
+    top: -50;
+
+}
 h3 {
     font-weight: bold;
 }
@@ -235,4 +241,17 @@ h3 {
 .input-field textarea[class=materialize-textarea]:focus {
 border-bottom: 1px solid #FFFFFF;
 box-shadow: 0 1px 0 0 #FFFFFF;
+}
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  color: white;
+  top: 7rem;
+  left: 30%;
+  right: 30%;
 }
