@@ -94,10 +94,11 @@ def delete_whisky(whisky_id):
 
 
 # Contact page
-@app.route('contact')
-def contact_page:
+@app.route('/contact')
+def contact():
     """Contact Page - user can easily contact with admin sending a message to him.
     Also, user can choose if he wants to getting newsletter"""
+    return render_template('pages/contact.html')
 
 
 if __name__ == '__main__':
