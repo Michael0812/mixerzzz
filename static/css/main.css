@@ -141,11 +141,7 @@ h3 {
     width: 100%;
 }
 
-h3{
-    position: absolute;
-    top: 200px;
-    margin-left: 100px;
-}
+
 .address {
     color: #FFFFFF;
     font-size: 1.2rem;
