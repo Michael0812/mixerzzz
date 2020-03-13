@@ -226,6 +226,15 @@ h3 {
     .title-main{
         font-size: 4rem;
     }
+    body{
+        font-size: 2rem;
+    }
+    .nav-link{
+        font-size: 1.4rem;
+    }
+    .text-block{
+        top: 10rem;
+    }
   }
 
 @media only screen and (max-width: 768px) {
