@@ -127,10 +127,6 @@ h3 {
     margin-top: 4rem;
 }
 
-.drinks-page{
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
 .number {
     height: 35px;
     margin-right: 1.7rem;
@@ -263,3 +259,8 @@ border-bottom: 1px solid #FFFFFF;
 box-shadow: 0 1px 0 0 #FFFFFF;
 }
 
+.center-cols > .col {
+  float:none; /* disable the float */
+  display: inline-block; /* make blocks inline-block */
+  text-align: initial; /* restore text-align to default */
+}
