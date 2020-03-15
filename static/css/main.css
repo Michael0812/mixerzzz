@@ -140,7 +140,7 @@ h3 {
 .scoring-text {
     color: #FFFFFF;
     margin-top: 3.5rem;
-    padding-top: 70px;
+    padding-top: 4rem;
     text-align: center;
 }
 
@@ -167,16 +167,12 @@ h3 {
 .social {
     height: 30px;
     margin-right: 1rem;
-    margin-top: 7px;
+    margin-top: 0.3rem;
 }
 
 /* Drinks */
 .card-text {
     color: #000000;
-}
-
-.card-title{
-    margin-top:20px;
 }
 
 .number {
