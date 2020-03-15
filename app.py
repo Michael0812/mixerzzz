@@ -94,7 +94,7 @@ def delete_whisky(whisky_id):
 
 
 # Contact page
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     """Contact Page - user can easily contact with admin sending a message to him.
     Also, user can choose if he wants to getting newsletter"""
