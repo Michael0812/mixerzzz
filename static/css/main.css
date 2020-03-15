@@ -175,6 +175,10 @@ h3 {
     color: #000000;
 }
 
+.card-title{
+    margin-top:20px;
+}
+
 .number {
     margin-bottom: 0.625rem;
 }
