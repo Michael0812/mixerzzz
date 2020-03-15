@@ -22,12 +22,12 @@ body {
 /* NAVBAR */
 a:hover {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 nav {
     background-color: #000000;
-    }
+}
 
 .nav-link {
     font-weight: bold;
@@ -54,11 +54,11 @@ nav {
 
 .nav-link-ltr::before {
     width: 0%;
-    bottom: 1.25rem;
+    bottom: 1rem;
 }
 
 .nav-link-ltr:hover::before {
-    width: 69%;
+    width: 72%;
 }
 
 /* LOGO */
