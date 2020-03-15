@@ -57,29 +57,25 @@
 
 <section class="drinks-section">
     
-        <div class="row center">
-            <!--Water-->
-            <div class="col s12 m6 l3">
-                <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks mb-2">
-                <p class="drinks">WATER</p>
-                <p>It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
-            </div>
-            <!--Ginger Ale-->
-            <div class="col s12 m6 l3">
-                <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale" class="drinks m6 mt-2">
-                <p class="drinks-ginger">GINGER ALE</p>
+        <div class="row center drinks-uo">
+            <div class="col s12 m6">
+                <img src="{{ url_for('static', filename='img/ginger_ale.svg') }}" alt="Ginger ale" class="drinks pt-2">
+                <p class="drinks-ginger mt-4">GINGER ALE</p>
                 <p>The addition of bubbles to ginger-infused water produces whisky’s finest mixer, as the ginger is a natural partner with the sweet spices in many whiskies. Importantly, ginger also extend the
                     finish of any whisky.</p>
             </div>
-            <!--Coke-->
-            <div class="col s12 m5 l3">
-                <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks mt-2">
+            <div class="col s12 m6">
+                <img src="{{ url_for('static', filename='img/water.svg') }}" alt="Water" class="drinks m6 pt-2">
+                <p class="drinks">WATER</p>
+                <p>It not only helps you to (re)hydrate, but is also an essential companion when enjoying whisky. Not only does adding a drop of water when nosing and tasting allow you to appreciate fully whisky’s aromas, but dilution is good when drinking</p>
+            </div>
+            <div class="col s12 m6">
+                <img src="{{ url_for('static', filename='img/coke.svg') }}" alt="Coke" class="drinks">
                 <p class="drinks">COKE</p>
                 <p class="coke">Coke’s ubiquity as a soft drink has helped it become the go-to mixer for many spirits, and whisky is no exception. It was coke that elevated blended Scotch to mass-market appeal in Spain in the 1990s.</p>
             </div>
-            <!--Green Tea-->
             <div class="col s12 m6">
-                <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mt-">
+                <img src="{{ url_for('static', filename='img/green_tea.svg') }}" alt="Green Tea" class="drinks mt-1">
                 <p class="drinks">GREEN TEA</p>
                 <p>Green Tea - Green tea is the most common version of this mixer to be used, but the high sugar levels of some brand alter the balance of the drink, making it too saccharine. Sugar is important
                     as green tea will have a dry grip that combines with the oak in the whisky</p>
