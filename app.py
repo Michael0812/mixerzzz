@@ -96,6 +96,10 @@ def delete_whisky(whisky_id):
 # Contact page
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message".format(
+            request.form["name"]
+        ))
     """Contact Page - user can easily contact with admin sending a message to him.
     Also, user can choose if he wants to getting newsletter"""
     return render_template('pages/contact.html')
