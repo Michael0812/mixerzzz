@@ -30,24 +30,31 @@ def index():
 # Drinks page
 @app.route('/drinks')
 def drinks():
-    """Drinks Page - display all items stored in MongoDB / On that page users can READ, EDIT & DELETE"""
+    """Drinks Page - display all items stored in MongoDB /
+     On that page users can READ, EDIT & DELETE"""
     return render_template('pages/drinks.html', whiskys=mongo.db.whisky.find())
 
 
 # Add page
 @app.route('/drink/add')
 def add_whisky():
-    """ Add Page - On that page, users are allowed to easily add new item(drink). Item is going to be add on the page and in database. Also, user are required to fill up all forms"""
+    """Add Page - On that page, users are allowed to easily add new item.
+    Item is going to be add on the page and in database.
+     Also, user are required to fill up all forms"""
     return render_template('pages/addwhisky.html',
             categories=mongo.db.categories.find())
 
 
-@app.route('/drink/insert', methods=['POST'])
+@app.route('/drink/insert', methods=['GET', 'POST'])
 def insert_whisky():
-    """"""
+    """"""   
+    if request.method == 'POST':
+        flash("Thanks, you added new drink successfully")
     whisky = mongo.db.whisky
     whisky.insert_one(request.form.to_dict())
     return redirect(url_for('drinks'))
+
+ 
 
 
 # Edit whisky
@@ -96,12 +103,12 @@ def delete_whisky(whisky_id):
 # Contact page
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    """Contact Page - user can easily contact with admin sending a message to him.
+    Also, user can choose if he wants to getting newsletter"""
     if request.method == "POST":
         flash("Thanks {}, we have received your message".format(
             request.form["name"]
         ))
-    """Contact Page - user can easily contact with admin sending a message to him.
-    Also, user can choose if he wants to getting newsletter"""
     return render_template('pages/contact.html')
 
 
