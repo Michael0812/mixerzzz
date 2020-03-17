@@ -6,7 +6,7 @@ from os import path
 
 
 if path.exists('env.py'):
-  import env 
+    import env 
 
 
 app = Flask(__name__)
@@ -49,21 +49,21 @@ def add_whisky():
 def insert_whisky():
     """"""   
     if request.method == 'POST':
-        flash("Thanks, you added new drink successfully")
+        flash("Thanks, you've added {} successfully".format(
+            request.form["whisky_name"]
+        ))
     whisky = mongo.db.whisky
     whisky.insert_one(request.form.to_dict())
     return redirect(url_for('drinks'))
 
  
-
-
 # Edit whisky
 @app.route('/edit/<whisky_id>')
 def edit_whisky(whisky_id):
     """Edit Page - on that page user are allowed to edit specific item. 
     All changes going to be change on the Drink Page and database"""
-    the_whisky =  mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
-    all_categories =  mongo.db.categories.find()
+    the_whisky = mongo.db.whisky.find_one({"_id": ObjectId(whisky_id)})
+    all_categories = mongo.db.categories.find()
     return render_template('pages/editwhisky.html', whisky=the_whisky,
                            categories=all_categories)
 
@@ -72,10 +72,15 @@ def edit_whisky(whisky_id):
 @app.route('/drink/update/<whisky_id>', methods=["POST"])
 def update_whisky(whisky_id):
     """Update - user are allowed to click 'update', after editing in Edit page.
-    That will approve all changes. The changes will be saved on the page and database(MongoDB)
-    and redirect user to drink page, where user can see changes"""
+    That will approve all changes. The changes will be saved on the page
+    & database(MongoDB)and redirect user to drink page,
+     where user can see changes"""
+    if request.method == 'POST':
+        flash("Thanks, you've updated {} successfully".format(
+            request.form["whisky_name"]
+        ))
     whisky = mongo.db.whisky
-    whisky.update( {'_id': ObjectId(whisky_id)},
+    whisky.update({'_id': ObjectId(whisky_id)},
     {
         'category_name': request.form.get('category_name'),
         'whisky_img': request.form.get('whisky_img'),
@@ -92,10 +97,9 @@ def update_whisky(whisky_id):
 # Delete whisky
 @app.route('/drink/delete/<whisky_id>')
 def delete_whisky(whisky_id):
-    """Delete - user are allowed to delete specific item(drink) using button(delete) 
+    """Delete - user are allowed to delete specific item(drink) using button
     that is located on drink page under every item.
-    Item, is going to be delete from the page and database(MongoDB)
-    """
+    Item, is going to be delete from the page and database(MongoDB)"""
     mongo.db.whisky.remove({'_id': ObjectId(whisky_id)})
     return redirect(url_for('drinks'))
 
