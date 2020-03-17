@@ -180,8 +180,18 @@ h3 {
 }
 
 /* Flash message */
-.flashes{
+.flashes,
+.defensive-text{
     color: #dd9e1f;
+}
+
+.defensive-text{
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+a{
+    color: #FFFFFF
 }
 
   /* Media Queries */
@@ -190,6 +200,9 @@ h3 {
         margin-top: 6rem;
         width: 500px;
         height: 400px;
+    }
+    .defensive-text{
+        font-size: 1.5rem;
     }
 }
 

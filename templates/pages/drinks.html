@@ -4,10 +4,13 @@
 
 <!--Drinks page - Users are allowed to READ, EDIT(Update) & DELETE cards with drink (images, category, drinks, description, mixing)-->
 
+
 <section class="drinks-page">
-  <div class="row pt-5">
+  <div class="row pt-5 pb-5 mt-2">
     {% for whisky in whiskys %}
         {% include 'components/cards.html' %}
+        {% else %}
+            <p class="defensive-text center pt-5 pb-5 mb-5 mt-5">Oops, there is no drinks available right know.<br> Don't leave it blank... <a href="{{url_for('add_whisky')}}">Add</a> your favorite drink!</p>
     {% endfor %}
   </div>
 </section>

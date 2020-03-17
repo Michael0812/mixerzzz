@@ -17,6 +17,7 @@ app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 app.secret_key = 'secret'
 
+
 mongo = PyMongo(app)
 
 
@@ -32,6 +33,8 @@ def index():
 def drinks():
     """Drinks Page - display all items stored in MongoDB /
      On that page users can READ, EDIT & DELETE"""
+    if not mongo.db.whisky:
+        print("blablabla")
     return render_template('pages/drinks.html', whiskys=mongo.db.whisky.find())
 
 
