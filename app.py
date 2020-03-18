@@ -33,8 +33,6 @@ def index():
 def drinks():
     """Drinks Page - display all items stored in MongoDB /
      On that page users can READ, EDIT & DELETE"""
-    if not mongo.db.whisky:
-        print("blablabla")
     return render_template('pages/drinks.html', whiskys=mongo.db.whisky.find())
 
 

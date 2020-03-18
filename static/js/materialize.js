@@ -7,5 +7,5 @@
         $('.collapsible').collapsible();
         $('select').material_select();
         $(".button-collapse").sideNav();
-        $('select').MaterialSelect();
+        $("#myselect").material_select();
     });
