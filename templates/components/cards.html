@@ -1,13 +1,13 @@
     {% block card %}
     {% include 'components/flash_message.html' %}
 
-<div class="col s12 mt-3 mb-4">
+<div class="col s12 m6 l3">
     <div class="card">
         <div class="card-image">
             <img src="{{ whisky.whisky_img }}" alt="cutty_sark" class="responsive-img card-img">
-            <h3 class="page-title center grey">{{whisky.category_name}}</h3>
+            <h5 class="page-title center grey">{{whisky.category_name}}</h5>
         </div>
-            <span class="card-title text-red pt-2">{{ whisky.whisky_name }}</span>
+            <span class="card-title pt-2">{{ whisky.whisky_name }}</span>
         <div class="card-text ml-2 mr-2 mt-2">{{ whisky.whisky_description }}</div>
         <span class="card-action">
             <table>
