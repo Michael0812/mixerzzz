@@ -119,10 +119,7 @@ h3 {
     background: #F3F3F3;
 }
 
-.number {
-    height: 22px;
-    margin-right: 1.7rem;
-}
+
 table{
     margin-left: 1.5rem;
 }
@@ -167,7 +164,7 @@ table{
     width: 100%;
 }
 
-.page-title{
+
     color: #dd9e1f;
 }
 .input-field,
@@ -186,7 +183,9 @@ table{
 
 /* Flash message */
 .flashes,
-.defensive-text{
+.defensive-text,
+.page-title,
+.number{
     color: #dd9e1f;
 }
 
