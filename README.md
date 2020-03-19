@@ -30,3 +30,13 @@ Links located in navbar are connect with following pages of the website :
 
 #### Banner - image
 In web design, a hero image is a large web banner image, prominently placed on a web page, generally in the front and center. The hero image is often the first visual element a visitor encounters on the site; it presents an overview of the site's most important content. A hero image often consists of image and text, and can be static or dynamic. On this website the hero image presents bar shelfs with loads o9f different bottles of alcohol. This image was used to make users aware of what the website is about, also it does make it a bit more interesting to scroll down to find a bit more. On small devices user can see title that is located on the bottom of the banner image. While, on the large devices for better view title is moved to the top of the banner.
+
+
+#### Introduction
+The main content on the website is located jest bellow the banner in the center for better view. There is an introductory paragraph about what the website is about.
+
+#### Mixing
+In this section user can find information and explanation how mixing works along with some whisky bottle graphic to support the text. Also, on a medium device user can see image with bootle. On larger devices image is located next to the text. However for a better view and website transparency image is not visible on a small device. Below this paragraph there is a list of drinks such as coke, water, tea etc. that we are going to score from 1-5 that taste good or bad with specific types of whiskeys. 
+
+#### Scoring
+This is where it gets even more interesting for the user. This section explains that they can rate they favorite whisky mixer drink from 1 being worst and 5 being best. Also, it tells the user the drinks page can be used as a guidance to try their favorite whiskeys with different drinks. 
