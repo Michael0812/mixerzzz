@@ -186,6 +186,33 @@ python app.py
 11. The site is now successfully deployed.
 
 
+## Database Structure
+
+### Category
+
+```category_name``` : ```string```
+
+```category_name``` : ```string```
+
+```category_name``` : ```string```
+
+### Whisky
+
+```category_name``` : ```string```
+
+```whisky_img``` : ```string(url)```
+
+```whisky_description``` : ```string```
+
+```number_water``` : ```number```
+
+```number_ginger``` : ```number```
+
+```number_coke``` : ```number```
+
+```number_green_tea``` : ```number```
+
+
 ## Testing
 Testing can be found in [TESTING.md](TESTING.md)
 
