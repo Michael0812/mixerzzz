@@ -17,7 +17,7 @@ This site was tested across multiple browsers (Chrome, Safari, Internet Explorer
 
  - I had another issue with flash message. When I was trying to add or edit a new task the aler appear on every single drink card. I did my reserach and after talking to one of the tutor I have manged to move ```{% include 'components/flash_message.html' %}``` from drinks.html file to base.html and that solved my issue.
 
- - I had also, faced an issue wile adding description of the drinks. I found out that different lengths of text have resulted with different sizes of cards. To stop this from happening I had to set minimum and maxium amount of text for description and this has solved the problem. Also, now I can make sure that all of the boxes are nice and consistent.
+ - I had also, faced an issue wile adding description of the drinks. I found out that different lengths of text have resulted with different sizes of cards. To stop this from happening I had to set minimum and maxium amount of text for description and this has solved the problem. Also, now I can make sure that all of the boxes are nice and consistent. Edit: Is can
  
 Also, many other small issue was solving during this project. I was doing many research, talking with people in Slack community, my mentor, tutors.
 
