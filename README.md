@@ -35,8 +35,24 @@ In web design, a hero image is a large web banner image, prominently placed on a
 #### Introduction
 The main content on the website is located jest bellow the banner in the center for better view. There is an introductory paragraph about what the website is about.
 
+
 #### Mixing
 In this section user can find information and explanation how mixing works along with some whisky bottle graphic to support the text. Also, on a medium device user can see image with bootle. On larger devices image is located next to the text. However for a better view and website transparency image is not visible on a small device. Below this paragraph there is a list of drinks such as coke, water, tea etc. that we are going to score from 1-5 that taste good or bad with specific types of whiskeys. 
 
 #### Scoring
 This is where it gets even more interesting for the user. This section explains that they can rate they favorite whisky mixer drink from 1 being worst and 5 being best. Also, it tells the user the drinks page can be used as a guidance to try their favorite whiskeys with different drinks. 
+
+#### CTA
+This is the section that encourages users to stay on the page and take action by signing up and  adding their own ideas to the drink page. 
+
+#### Footer
+It is located on every page. Logo in the footer takes the user back to the Home page. There are few links that take you further to other pages on this site:
+
+* Drinks - goes to drinks page ( User can see all drink and manipulate them).
+* Add - goes to add page (User can add new drink).
+* Contact - goes to contact page (User can contact us).
+
+Also connects to social media:
+- [Facebook](https://www.facebook.com/thewhiskyexchange)
+- [Twitter](https://twitter.com/WhiskyExchange)
+- [Instagram](https://www.instagram.com/whiskyexchange/)
