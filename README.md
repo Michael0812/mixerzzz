@@ -56,3 +56,20 @@ Also connects to social media:
 - [Facebook](https://www.facebook.com/thewhiskyexchange)
 - [Twitter](https://twitter.com/WhiskyExchange)
 - [Instagram](https://www.instagram.com/whiskyexchange/)
+
+
+#### DRINK PAGE
+On this page, the user will see the cards with the drinks (pictures, type, name, description and scoring system). Information he has read on the previous page can now be used. He is allowed to use four basic functions of persistent storage.
+
+**C**reate ( located in ADD page) - User are allowed to add new drink. All fields are required to be filled. Also, user is asked to add a small image. It was used to make it more user friendly for other people and to keep cards looking nice and clear. 
+
+**R**ead - User can easily read all information located in the cards.
+
+**U**pdate - There is an edit button located on each card, moves the user to edit page where they can change any field they want to what they think is correct. At the end they can use submit button that takes them to accept all changes and send user back to the drink page to see all the changes. While, cancel button will not go to change anything and will send them back to the home page
+
+**D**elete - User is also allowed to delete one or even all of the database (cards). To make sure no one can broke the app, defensive design was created. After deleting all database (cards) information pops up to inform that there is no drinks at the moment and anyone is allowed to add new one.
+
+
+#### Contact Page
+On this page, user can easily find the contact form to send a message to the admin. If anything was unclear or if they have got any other information they can easily fill up the form giving details and send it.
+
