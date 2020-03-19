@@ -39,11 +39,14 @@ The main content on the website is located jest bellow the banner in the center 
 #### Mixing
 In this section user can find information and explanation how mixing works along with some whisky bottle graphic to support the text. Also, on a medium device user can see image with bootle. On larger devices image is located next to the text. However for a better view and website transparency image is not visible on a small device. Below this paragraph there is a list of drinks such as coke, water, tea etc. that we are going to score from 1-5 that taste good or bad with specific types of whiskeys. 
 
+
 #### Scoring
 This is where it gets even more interesting for the user. This section explains that they can rate they favorite whisky mixer drink from 1 being worst and 5 being best. Also, it tells the user the drinks page can be used as a guidance to try their favorite whiskeys with different drinks. 
 
+
 #### CTA
 This is the section that encourages users to stay on the page and take action by signing up and  adding their own ideas to the drink page. 
+
 
 #### Footer
 It is located on every page. Logo in the footer takes the user back to the Home page. There are few links that take you further to other pages on this site:
@@ -72,4 +75,31 @@ On this page, the user will see the cards with the drinks (pictures, type, name,
 
 #### Contact Page
 On this page, user can easily find the contact form to send a message to the admin. If anything was unclear or if they have got any other information they can easily fill up the form giving details and send it.
+
+
+## Technologies Used
+
+#### Languages:
+
+- HTML
+- CSS
+- JavaScript
+- [Python](https://www.python.org/)
+
+#### Tools:
+
+- [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Git](https://git-scm.com/)
+- [PIP](https://pypi.org/)
+
+#### Libraries:
+
+- [JQuery](https://jquery.com/)
+- [Flask](https://palletsprojects.com/p/flask/)
+- [PyMongo](https://api.mongodb.com/python/current/)
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- [Google Fonts](https://fonts.google.com/)
+- [Materialize](https://materializecss.com/)
 
