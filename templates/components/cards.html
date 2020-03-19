@@ -1,6 +1,6 @@
     {% block card %}
 
-<div class="col s12 m6 l4">
+<div class="col s12 m6">
 
     <div class="card">
         <div class="card-image">
@@ -29,7 +29,7 @@
                 </tr>
              </table>
         </span>
-        <a href="{{url_for('edit_whisky', whisky_id=whisky._id)}}" class="edit btn waves grey mt-2 mb-2">Edit</a>
+        <a href="{{url_for('edit_whisky', whisky_id=whisky._id)}}" class="edit btn waves grey mt-2 mb-2 mr-2">Edit</a>
         <a href="{{url_for('delete_whisky', whisky_id=whisky._id)}}" class="delete btn waves grey mt-2 mb-2">Delete</a>
       </div>
     </div>
