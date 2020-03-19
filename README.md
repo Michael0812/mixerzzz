@@ -184,3 +184,24 @@ python app.py
 9. In the heroku dashboard, click **Deploy**.
 10. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click **Deploy Branch**.
 11. The site is now successfully deployed.
+
+
+## Testing
+Testing can be found in [TESTING.md](TESTING.md)
+
+
+## Credits
+
+ - Logo was made by [Lidia Kabala](https://www.linkedin.com/in/lidia-kabala-3b2036137/)
+ 
+ - Text - was copied from the book [Whisky - The Manual Dave Broom](https://www.goodreads.com/book/show/17899896-whisky)
+ 
+ - Images - was copied and shared from [The whisky exchange](https://www.thewhiskyexchange.com/)
+ 
+ - Excellent explanations about deployment was inspired and copied from [Anna Greaves](https://github.com/AJGreaves/familyhub#deployment) project.
+ 
+ ##### Also, I was working with different websites that gave me some helps, advices and ideas for this project:
+- [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn)
+- [w3schools](https://www.w3schools.com)
+- [Google developers](https://developers.google.com/)
+- [awwwards](https://www.awwwards.com)
