@@ -75,10 +75,9 @@ git clone https://github.com/AJGreaves/familyhub
 2. If possible open a terminal session in the unzip folder or cd to the correct location.
 
 3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
-
 ```
 python -m .venv venv
-```  
+```
 _NOTE: Your Python command may differ, such as python3 or py_
 
 4. Activate the .venv with the command:
@@ -144,6 +143,8 @@ Testing can be found in [TESTING.md](TESTING.md)
  - Text - was copied from the book [Whisky - The Manual Dave Broom](https://www.goodreads.com/book/show/17899896-whisky)
  
  - Images - was copied and shared from [The whisky exchange](https://www.thewhiskyexchange.com/)
+ 
+ - Excellent explanations about deployment was inspired and copied from (Anna Greaves)[https://github.com/AJGreaves/familyhub#deployment] project.
  
  ##### Also, I was working with different websites that gave me some helps, advices and ideas for this project:
 - [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn)
