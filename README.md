@@ -103,3 +103,84 @@ On this page, user can easily find the contact form to send a message to the adm
 - [Google Fonts](https://fonts.google.com/)
 - [Materialize](https://materializecss.com/)
 
+
+## Deployment
+
+### How to run this project locally
+
+To run this project on your own IDE follow the instructions below:
+
+Ensure you have the following tools: 
+- An IDE such as [GitPod](https://gitpod.io/workspaces/)
+- Also, full workspace [template](https://github.com/Code-Institute-Org/gitpod-full-template) for GitPod were taken from Code Instutite.
+
+The following **must be installed** on your machine:
+- [PIP](https://pip.pypa.io/en/stable/installing/)
+- [Python 3](https://www.python.org/downloads/)
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+- An account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or MongoDB running locally on your machine. 
+    - How to set up your Mongo Atlas account [here](https://docs.atlas.mongodb.com/).
+    
+### Instructions
+
+1. Save a copy of the github repository located at [Github](https://github.com/Michael0812/mixerzzz) by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+
+```
+git clone https://github.com/Michael0812/mixerzzz
+```
+
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
+
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
+```
+python -m .venv venv
+```
+_NOTE: Your Python command may differ, such as python3 or py_
+
+4. Activate the .venv with the command:
+```
+.venv\Scripts\activate 
+```
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+
+4. If needed, Upgrade pip locally with
+```
+pip install --upgrade pip.
+```
+
+5. Install all required modules with the command 
+```
+pip -r requirements.txt.
+```
+
+6. In your local IDE create a file called `.flaskenv`.
+
+7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `familyHub`, with 2 collections called `users` and `activities`. You will find example json structures for these collections in the [schemas](familyhubapp/data/schemas) folder.
+
+8. You can now run the application with the command
+```
+python app.py
+```
+
+9. You can visit the website at `http://127.0.0.1:5000`
+
+
+### How to deployment project in Heroku
+
+1. Create a ```requirements.txt``` file using the terminal command ```pip freeze > requirements.txt```.
+2. Create a ```Procfile``` with the terminal command ```echo web: python app.py > Procfile```.
+3. Then, please put ```git add``` and ```git commit``` the new requirements and Procfile and then ```git push``` the project to GitHub.
+4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the **New** button in your dashboard. Give it a name and set the region to Europe.
+5. From the heroku dashboard of your newly created application, click on ```Deploy``` > ```Deployment method``` and select GitHub.
+6. Confirm the linking of the heroku app to the correct GitHub repository.
+7. In the heroku dashboard for the application, click on **Settings** > **Reveal Config Vars**.
+8. Set the following config vars:
+
+- ```IP  :  0.0.0.0```
+- ```MONGO_DBNAME  :  database name```
+- ```MONGO_URI  :  mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority```
+- ```PORT  :  5000```
+
+9. In the heroku dashboard, click **Deploy**.
+10. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click **Deploy Branch**.
+11. The site is now successfully deployed.
