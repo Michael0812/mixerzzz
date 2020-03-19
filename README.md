@@ -205,3 +205,19 @@ Testing can be found in [TESTING.md](TESTING.md)
 - [w3schools](https://www.w3schools.com)
 - [Google developers](https://developers.google.com/)
 - [awwwards](https://www.awwwards.com)
+
+
+## Inspiration
+Inspiration for this project was taken from the book [Whisky - The Manual Dave Broom](https://www.goodreads.com/book/show/17899896-whisky). Many people of the world drinkig alcohol, whisky included. After I have read this book I realized that there is a many many different way how we can drink and mix whisky. That why I decided to make my project about it and try to show people some magic trick and whisky.
+
+
+## Acknowledgements
+- I would like to thank my [partner](https://www.linkedin.com/in/lidia-kabala-3b2036137/) immensely who was supporting and helping me throughout the whole journey. 
+- Massive thanks to my mentor [Simen Daehlin](https://www.github.com/Eventyret), he gave me so many very useful tips and advices, and he is was always open, helpful and kind to me. i will suck his dick too
+- Also, I would like to thank students and tutors from Code Institute that were helping me with every issue I had, they were always trying to give me their best advice and help me sort things out.
+
+
+ ### The content of this Website is for educational purposes only.
+
+
+[Back to the top](#navigation)
