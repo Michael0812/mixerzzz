@@ -8,3 +8,10 @@ This site is devoted to the world-famous whisky. You do not have to be a lover o
 
 ## Wireframes
 Wireframes were created in Adobe XD and can be found [here](wireframes)
+
+## Existing Featurers
+
+
+### HOME PAGE
+#### Logo
+The logo is of one of the most important things on every website . This is a suitable business card for brands, it is worth ensuring that it is transparent and legible to the user. Therefore, the logo idea was obvious for this page. The logo that I have used is simple but effective, straight away gives you an idea that the content on this website will have something to with drinks. Logo It is transparent and easily accessible. We have used the logo at the left hand side in the navigation bar as well as at the bottom of the page in the footer section. We are certain that these two location are the best to make sure user will remember the brand. Logo is visible on all devices.
