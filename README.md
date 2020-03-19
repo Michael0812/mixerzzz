@@ -26,3 +26,7 @@ Links located in navbar are connect with following pages of the website :
 * Drinks - goes to drinks page ( User can see all drink and manipulate them).
 * Add - goes to add page (User can add new drink).
 * Contact - goes to contact page (User can contact us).
+
+
+#### Banner - image
+In web design, a hero image is a large web banner image, prominently placed on a web page, generally in the front and center. The hero image is often the first visual element a visitor encounters on the site; it presents an overview of the site's most important content. A hero image often consists of image and text, and can be static or dynamic. On this website the hero image presents bar shelfs with loads o9f different bottles of alcohol. This image was used to make users aware of what the website is about, also it does make it a bit more interesting to scroll down to find a bit more. On small devices user can see title that is located on the bottom of the banner image. While, on the large devices for better view title is moved to the top of the banner.
