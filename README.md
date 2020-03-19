@@ -214,7 +214,7 @@ python app.py
 
 
 ## Testing
-Testing can be found in [TESTING.md](TESTING.md)
+Testing can be found in [testing.md](testing.md)
 
 
 ## Credits
