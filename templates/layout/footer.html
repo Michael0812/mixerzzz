@@ -4,11 +4,11 @@
         <footer class="page-footer">
           <div class="container">
             <div class="row">
-              <div class="col s12 center m6 l3">
+              <div class="col s12 center m4 l3">
                 <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo-footer mt-1" alt="logo"></a>
                     <p class="name-footer mb-2">MIXERZZZ</p>
               </div>
-              <div class="col s12 m6 l6 center">
+              <div class="col s12 m4 l6 center">
                 <ul>
                   <li class="address">
                     <a href="{{url_for('drinks')}}" class="address">Drinks</a>
@@ -21,7 +21,7 @@
                 </li>
                 </ul>
               </div>
-              <div class="col s12 center m6 l3">
+              <div class="col s12 center m4 l3">
                 {% include 'components/social.html' %}
               </div>
             </div>
