@@ -45,3 +45,8 @@ I have asked a friend to test this website which I found very helpful. Please fi
 </p>
 
 - This project used [PEP8](http://pep8online.com/) to validate Python code.
+
+
+## Update
+
+After submitting my project I did found an issue. Background on the page has black color. That why I did set up all font color to white to make sure is clearly visible. The font color of text that user can type in **Add**, **Edit** and **Contact** page also supposed to be white color. By accident became black color. That issue would impact User Experience drastically. After talking to Code Institute Student Care I got permission to change the color.
