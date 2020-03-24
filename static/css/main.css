@@ -91,7 +91,7 @@ h3 {
 
 .text,
 .content {
-    opacity: 1px;
+    opacity: 1;
 }
 
 .name,
@@ -164,9 +164,6 @@ table{
     width: 100%;
 }
 
-
-    color: #dd9e1f;
-}
 .input-field,
 .btn,
 .icon-form {
