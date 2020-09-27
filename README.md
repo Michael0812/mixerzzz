@@ -4,11 +4,12 @@
 
 ## Navigation
 
-1. [UX/UI](#ux/ui)
-    - [Wireframes](#wireframes)
-2. [Features](#features)
-    - [Existing Features](#existing-features)
-        - [Home Page](#home-page)
+1. [ UX](#ux)
+
+2. [Wireframes](#wireframes)
+
+3. [Existing Featurers](#existing-featurers)
+      - [Home Page](#home-page)
             - [Logo](#logo)
             - [Navbar](#navbar)
             - [Banner](#banner)
@@ -16,10 +17,9 @@
             - [Mixing](#mixing)
             - [Scoring](#scoring)
             - [Footer](#footer)
-        - [Drink Page](#drink-page)
-     - [Features for Future Releases](#features-for-future-releases)
+       - [Drink Page](#drink-page)
         
-3. [Technologies Used](#technologies-used)
+4. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Tools](#tools)
     - [Libraries and Frameworks](#libraries-and-frameworks)
@@ -42,7 +42,7 @@
 
 10. [Acknowledgements](#acknowledgements)
 
-## UX/UI
+## UX
 This site is devoted to the world-famous whisky. You do not have to be a lover of this alcohol, but it's worth finding out what how to mix it to get the best flavour. You may surprise yourself but also your family or friends by serving them their drink in a different way. We hope that this information will be a good introduction to the world of whiskey and bring you closer to learning about different types of mixing. The purpose of this page is not to provide extensive book definitions, but to explain what is best mixed with your favorite whisky. However, if anyone has any information or questions that could not be find on this website, please do not hesitate to contact us.
 
 
@@ -103,13 +103,13 @@ Also connects to social media:
 #### DRINK PAGE
 On this page, the user will see the cards with the drinks (pictures, type, name, description and scoring system). Information he has read on the previous page can now be used. He is allowed to use four basic functions of persistent storage.
 
-**C**reate ( located in ADD page) - User are allowed to add new drink. All fields are required to be filled. Also, user is asked to add a small image. It was used to make it more user friendly for other people and to keep cards looking nice and clear. 
+**C**reate ( located in ADD page) - User are allowed to add new drink. All fields are required to be filled. Also, user is asked to add a small image. It was used to make it more user friendly for other people and to keep cards looking nice and clear. 
 
 **R**ead - User can easily read all information located in the cards.
 
 **U**pdate - There is an edit button located on each card, moves the user to edit page where they can change any field they want to what they think is correct. At the end they can use submit button that takes them to accept all changes and send user back to the drink page to see all the changes. While, cancel button will not go to change anything and will send them back to the home page
 
-**D**elete - User is also allowed to delete one or even all of the database (cards). To make sure no one can broke the app, defensive design was created. After deleting all database (cards) information pops up to inform that there is no drinks at the moment and anyone is allowed to add new one.
+**D**elete - User is also allowed to delete one or even all of the database (cards). To make sure no one can broke the app, defensive design was created. After deleting all database (cards) information pops up to inform that there is no drinks at the moment and anyone is allowed to add new one.
 
 
 #### Contact Page
@@ -162,46 +162,46 @@ The following **must be installed** on your machine:
     
 ### Instructions
 
-1. Save a copy of the github repository located at [Github](https://github.com/Michael0812/mixerzzz) by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+1. Save a copy of the github repository located at [Github](https://github.com/Michael0812/mixerzzz) by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
 
 ```
-git clone https://github.com/Michael0812/mixerzzz
+git clone https://github.com/Michael0812/mixerzzz
 ```
 
-2. If possible open a terminal session in the unzip folder or cd to the correct location.
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
 
-3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
 ```
-python -m .venv venv
+python -m .venv venv
 ```
-_NOTE: Your Python command may differ, such as python3 or py_
+_NOTE: Your Python command may differ, such as python3 or py_
 
-4. Activate the .venv with the command:
+4. Activate the .venv with the command:
 ```
-.venv\Scripts\activate 
+.venv\Scripts\activate 
 ```
-_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
 
-4. If needed, Upgrade pip locally with
+4. If needed, Upgrade pip locally with
 ```
-pip install --upgrade pip.
-```
-
-5. Install all required modules with the command 
-```
-pip -r requirements.txt.
+pip install --upgrade pip.
 ```
 
-6. In your local IDE create a file called `.flaskenv`.
-
-7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `familyHub`, with 2 collections called `users` and `activities`. You will find example json structures for these collections in the [schemas](familyhubapp/data/schemas) folder.
-
-8. You can now run the application with the command
+5. Install all required modules with the command 
 ```
-python app.py
+pip -r requirements.txt.
 ```
 
-9. You can visit the website at `http://127.0.0.1:5000`
+6. In your local IDE create a file called `.flaskenv`.
+
+7. Inside the .flaskenv file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `familyHub`, with 2 collections called `users` and `activities`. You will find example json structures for these collections in the [schemas](familyhubapp/data/schemas) folder.
+
+8. You can now run the application with the command
+```
+python app.py
+```
+
+9. You can visit the website at `http://127.0.0.1:5000`
 
 
 ### How to deployment project in Heroku
@@ -279,7 +279,7 @@ Inspiration for this project was taken from the book [Whisky - The Manual Dave B
 
 ## Acknowledgements
 - I would like to thank my [partner](https://www.linkedin.com/in/lidia-kabala-3b2036137/) immensely who was supporting and helping me throughout the whole journey. 
-- Massive thanks to my mentor [Simen Daehlin](https://www.github.com/Eventyret), he gave me so many very useful tips and advices, and he is was always open, helpful and kind to me.
+- Massive thanks to my mentor [Simen Daehlin](https://www.github.com/Eventyret), he gave me so many very useful tips and advices, and he is was always open, helpful and kind to me.
 - Also, I would like to thank students and tutors from Code Institute that were helping me with every issue I had, they were always trying to give me their best advice and help me sort things out.
 
 
