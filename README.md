@@ -2,6 +2,45 @@
 <a href="https://ibb.co/Zf9VfyP"><img src="https://i.ibb.co/sqRbSzJ/Zrzut-ekranu-2020-03-19-o-13-29-17.png" style='width:100%' alt="banner-img"></a>
 </div>
 
+## Navigation
+
+1. [UX/UI](#ux/ui)
+    - [Wireframes](#wireframes)
+2. [Features](#features)
+    - [Existing Features](#existing-features)
+        - [Home Page](#home-page)
+            - [Logo](#logo)
+            - [Navbar](#navbar)
+            - [Banner](#banner)
+            - [Introduction](#introdcution)
+            - [Mixing](#mixing)
+            - [Scoring](#scoring)
+            - [Footer](#footer)
+        - [Drink Page](#drink-page)
+     - [Features for Future Releases](#features-for-future-releases)
+        
+3. [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Tools](#tools)
+    - [Libraries and Frameworks](#libraries-and-frameworks)
+    - [Databases](#databases)
+
+    
+5. [Deployment](#deployment)
+    - [How to run project locally](#how-to-run-project-locally)
+    - [Instructions](#Instructions)
+    - [How to deployment project in Heroku](#how-to-deployment-project-in-heroku)
+    
+6. [Database Structure](#database-structure)
+
+7. [Testing](#tesing)
+  - See separate [TESTING.md](TESTING.md) file.
+ 
+8. [Credits](#credits)
+
+9. [Inspiration](#inspiration)
+
+10.[Acknowledgements](#acknowledgements)
 
 ## UX/UI
 This site is devoted to the world-famous whisky. You do not have to be a lover of this alcohol, but it's worth finding out what how to mix it to get the best flavour. You may surprise yourself but also your family or friends by serving them their drink in a different way. We hope that this information will be a good introduction to the world of whiskey and bring you closer to learning about different types of mixing. The purpose of this page is not to provide extensive book definitions, but to explain what is best mixed with your favorite whisky. However, if anyone has any information or questions that could not be find on this website, please do not hesitate to contact us.
